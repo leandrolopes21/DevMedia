@@ -1,0 +1,27 @@
+h1 {
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgba(225,100,42,255);
+}
+img {
+    display: block;
+    margin: auto;
+}
+h3 {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(225,100,42,255);
+    text-decoration: underline;
+}
+p {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 25px;
+}
