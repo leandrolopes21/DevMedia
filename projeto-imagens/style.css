@@ -3,8 +3,48 @@
     padding: 0px;
 }
 
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #AB9008 #411E0A;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #411E0A;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #A7C23B;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #7EC239;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #AB9008;
+    border: 1px solid #FFFFFF;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #62A34B;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #62A34B;
+  }
+  
+
 body {
     background-image: url(imagens/20220730_172830.jpg);
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -24,21 +64,25 @@ h1 {
 
 .container-principal {
     background-color: rgb(173, 72, 72);
-    width: 70%;
+    width: calc(100% - 300px);
+    max-width: 1024px;
+    white-space: nowrap;
     margin: 100px auto;
     border: 10px solid red;
 }
 
 .container-cards {
     border: 5px solid blue;
+    overflow: auto;
 }
 
 .card {
     display: inline-block;
     border: 5px solid green;
     background-color: rgb(200, 200, 200);
-    width: 30%;
-    margin: 25px auto;
+    width: 360px;
+    height: 250px;
+    margin: auto;
 }
 
 .imagem {
@@ -49,4 +93,8 @@ h1 {
 
 h2, p {
     text-align: center;
+}
+
+p {
+    white-space: normal;
 }
