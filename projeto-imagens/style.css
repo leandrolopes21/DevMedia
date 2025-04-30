@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(imagens/20220730_172830.jpg);
+    background-attachment: fixed;
+}
+
+.topo {
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+
+h1 {
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.container-principal {
+    background-color: rgb(173, 72, 72);
+    width: 70%;
+    margin: 100px auto;
+    border: 10px solid red;
+}
+
+.container-cards {
+    border: 5px solid blue;
+}
+
+.card {
+    display: inline-block;
+    border: 5px solid green;
+    background-color: rgb(200, 200, 200);
+    width: 30%;
+    margin: 25px auto;
+}
+
+.imagem {
+    display: block;
+    width: 340px;
+    margin: 10px auto;
+}
+
+h2, p {
+    text-align: center;
+}
