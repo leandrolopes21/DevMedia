@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
@@ -8,4 +9,168 @@
     background-image: url(imagens/banner-topo.jpg);
     background-position: center;
     background-size: cover;
+    width: 100%;
+    padding: 120px 80px;
+}
+
+.conteiner1 {
+    max-width: 250px;
+    color: #3c184e;
+}
+
+.paragrafo1 {
+    font-size: 35px;
+    margin: 0px 0px 5px 0px;
+}
+
+.paragrafo1 img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.paragrafo2 {
+    font-size: 14px;
+    text-align: center;
+    margin: 0px;
+}
+
+.conteiner2 {
+    background-color: #ffffff57;
+    max-width: 1024px;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 70px auto 0px auto;
+    box-shadow: 0px 8px 32px #1f26875e;
+}
+
+h1 { /* h1 da secao-banner */
+    font-size: 60px;
+    color: #3c184e;
+    text-align: center;
+    font-weight: 800;
+    margin: 0px 0px 40px 0px;
+}
+
+.conteiner2 p {
+    width: 200px;
+    padding: 10px 25px;
+    margin: 0px auto;
+    border-radius: 10px;
+    background-color: #3c184e;
+    font-size: 20px;
+    text-align: center;
+}
+
+.conteiner2 a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.conteiner2 img {
+    color: #ffff;
+    width: 20px;
+}
+
+.secao-servicos {
+    width: 100%;
+    padding: 120px 80px;
+}
+
+h3 { /* h3 da secao-servicos, secao-marcas e onde-estamos */
+    font-size: 36px;
+    color: #3c184e;
+    text-align: center;
+    margin: 0px 0px 45px 0px;
+}
+
+.lista {
+    max-width: 800px;
+    margin: 0px auto 50px auto;
+    color: #3c184e;
+}
+
+.lista li {
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+span { /* span da lista da secao-servicos */
+    font-weight: 700;
+    font-style: italic;
+}
+
+.imagens {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.imagens img {
+    border-radius: 5px;
+    box-shadow: 3px 6px 10px 6px #0000005c;
+}
+
+.faixas {
+    background-color: #3c184e;
+    width: 100%;
+    padding: 120px 80px;
+}
+
+.faixas p {
+    max-width: 800px;
+    margin: 0px auto 50px auto;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.links {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.faixas img {
+    margin: 0px 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.secao-marcas {
+    width: 100%;
+    padding: 120px 80px;
+}
+
+.marcas {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.marcas img {
+    width: 148px;
+    height: 148px;
+    margin: 0px 15px;
+}
+
+.onde-estamos {
+    width: 100%;
+    padding: 120px 80px;
+    text-align: center;
+}
+
+.onde-estamos p {
+    font-size: 20px;
+    color: #3c184e;
+    text-align: center;
+    margin: 0px 0px 45px 0px;
+}
+
+.rodape {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #3c184e;
+}
+
+.rodape p {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
 }
