@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.secao-banner {
+    background-image: url(imagens/banner-topo.jpg);
+    background-position: center;
+    background-size: cover;
+}
