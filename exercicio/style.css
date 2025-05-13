@@ -1,0 +1,23 @@
+.rede-social {
+    position: fixed;
+    bottom: 15px;
+}
+
+img {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.icon-facebook {
+    right: 30px;
+}
+
+.icon-instagram {
+    right: 100px;
+}
+
+.icon-whatsapp {
+    right: 170px;
+}
