@@ -57,6 +57,9 @@
     text-align: center;
 }
 
+/* secão informações */
+/* ------------------*/
+
 .container-parallax2 {
     width: 100%;
     height: 50vh;
@@ -71,7 +74,9 @@
 
 .container-parallax1,
 .container-parallax2,
-.container-parallax3 {
+.container-parallax3,
+.secao-contatos,
+.secao-horarios {
     position: relative;
     background-position: center;
     background-size: cover;
@@ -82,6 +87,7 @@
 .container-parallax3 h3 {
     background-color: #604829;
     color: #fff;
+    font-family: 'Oswald', serif;
     width: 500px;
     padding: 10px;
     position: absolute;
@@ -102,17 +108,22 @@
 }
 
 .conteiner-texto h2 {
+    font-family: 'Oswald', serif;
     padding: 20px;
     color: #c4a47c;
 }
 
 .conteiner-texto p {
+    font-family: 'Lato', serif;
     max-width: 1024px;
     padding: 0px 20px;
     color: #666;
     margin: 0px auto;
 }
-/*
+
+/* seção contato */
+/*---------------*/
+
 .secao-contatos {
     width: 100%;
     height: 100vh;
@@ -120,39 +131,78 @@
     background-image: url(imagens/parallax-imagem4.png);
 }
 
-h3 {
-    color: #604829;
-}
-
-.secao-contatos h2, .secao-contatos p {
+.secao-contatos h2, .pessoal {
+    font-family: 'Oswald', serif;
     background-color: #604829;
     color: #fff;
-    width: 30%;
+    width: 500px;
+    padding: 10px;
+}
+
+.secao-contatos h2 {
+    position: absolute;
+    top: 10%;
+    right: 0px;
+    left: 0px;
     margin: 0px auto;
 }
+
+.secao-contatos iframe {
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+}
+
+.pessoal {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    height: 150px;
+    line-height: 40px;
+    text-shadow: 5px 5px 3px #000;
+}
+
+/* seção horários */
+/* ---------------*/
 
 .secao-horarios {
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     background-image: url(imagens/cafeteria.jpg);
 }
 
-.secao-horarios h2, .secao-horarios h3 {
+.secao-horarios h2 {
+    font-family: 'Lato', serif;
     color: #fff;
-}
-
-h2 {
+    position: absolute;
+    top: 20%;
+    right: 0px;
+    left: 0px;
     text-align: center;
 }
 
+.secao-horarios h3 {
+    font-family: 'Lato', serif;
+    color: #fff;
+}
+
 .lista {
-    max-width: 60%;
+    position: absolute;
+    width: 768px;
     margin: 0px auto;
     list-style: none;
+    bottom: 20%;
+    right: 0px;
+    left: 0px;
 }
 
 .lista li {
     position: relative;
+    line-height: 30px;
 }
 
 .lista li div {
@@ -160,12 +210,14 @@ h2 {
     height: 1px;
     background-color: #acacac;
     position: absolute;
-    left: 100px;
-    bottom: 50%;
+    left: 0px;
+    right: 0px;
+    top: 50%;
     margin: 0px auto;
 }
 
 .lista li p {
+    font-family: 'Lato', serif;
     position: absolute;
     top: 0;
     right: 0;
@@ -177,8 +229,11 @@ h2 {
 }
 
 .rodape {
+    font-family: 'Lato', serif;
     background-color: #000;
     color: #fff;
+    width: 100%;
+    padding: 20px 0px;
     position: relative;
     text-align: center;
 }
