@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* secão topo */
+/* -----------*/
+
+.topo {
+    width: 100%;
+    height: 100px;
+    background-color: #604829;
+}
+
+.topo img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 15%;
+}
+
+.topo p {
+    position: absolute;
+    top: 35px;
+    right: 15%;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 5px 5px 2px #000;
+}
+
+.topo p a {
+    color: #c4a47c;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* seção banner */
+/* -------------*/
+
+.container-parallax1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(imagens/parallax-imagem1.png);
+    position: relative;
+}
+
+.container-parallax1 h1 {
+    width: 1200px;
+    color: #fff;
+    font-family: 'Fraunces', serif;
+    font-size: 80px;
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    text-align: center;
+}
+
+.container-parallax2 {
+    width: 100%;
+    height: 50vh;
+    background-image: url(imagens/parallax-imagem2.jpg);
+}
+
+.container-parallax3 {
+    width: 100%;
+    height: 50vh;
+    background-image: url(imagens/parallax-imagem3.jpg);
+}
+
+.container-parallax1,
+.container-parallax2,
+.container-parallax3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-parallax2 h3,
+.container-parallax3 h3 {
+    background-color: #604829;
+    color: #fff;
+    width: 500px;
+    padding: 10px;
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    left: 0px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.conteiner-texto {
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 80px 0px;
+}
+
+.conteiner-texto h2 {
+    padding: 20px;
+    color: #c4a47c;
+}
+
+.conteiner-texto p {
+    max-width: 1024px;
+    padding: 0px 20px;
+    color: #666;
+    margin: 0px auto;
+}
+/*
+.secao-contatos {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-image: url(imagens/parallax-imagem4.png);
+}
+
+h3 {
+    color: #604829;
+}
+
+.secao-contatos h2, .secao-contatos p {
+    background-color: #604829;
+    color: #fff;
+    width: 30%;
+    margin: 0px auto;
+}
+
+.secao-horarios {
+    width: 100%;
+    height: 100vh;
+    background-image: url(imagens/cafeteria.jpg);
+}
+
+.secao-horarios h2, .secao-horarios h3 {
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+}
+
+.lista {
+    max-width: 60%;
+    margin: 0px auto;
+    list-style: none;
+}
+
+.lista li {
+    position: relative;
+}
+
+.lista li div {
+    width: 60%;
+    height: 1px;
+    background-color: #acacac;
+    position: absolute;
+    left: 100px;
+    bottom: 50%;
+    margin: 0px auto;
+}
+
+.lista li p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #acacac;
+}
+
+.lista span, .rodape span {
+    color: #c4a47c;
+}
+
+.rodape {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.rodape a {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 50px;
+    bottom: 80px;
+}
