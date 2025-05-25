@@ -2,151 +2,241 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* seção topo */
 
 .topo {
     background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100px;
-    /* background-color: #fff; */
-    z-index: 100;
+    padding: 35px 0px;
 }
 
-.topo img {
+.grupo-topo {
+    position: relative;
+    width: 1024px;
+    height: 70px;
+    margin: 0px auto;
+}
+
+.grupo-topo img {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 25px;
-    left: 15%;
+    width: 70px;
+    height: 70px;
+    top: 0;
+    left: 0;
 }
 
 .topo h1 {
     position: absolute;
-    top: 25px;
-    left: 20%;
+    top: 0;
+    left: 10%;
+    font-size: 32px;
+    color:#000000;
 }
 
 .topo p {
     position: absolute;
-    top: 65px;
-    left: 20%;
+    left: 10%;
+    bottom: 0;
+    font-size: 16px;
+    color: #2f86d6;
 }
 
 .topo .links {
     position: absolute;
     width: 547px;
-    top: 50px;
-    right: 15%;
+    right: 0;
+    bottom: 0;
     text-align: center;
-    border: 2px solid;
 }
 
 .topo .links a {
-    padding: 15px;
+    font-size: 18px;
+    padding: 5px;
     text-decoration: none;
-    font-weight: bold;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    padding-top: 100px;
+    color: #233032;
 }
 
 /* seção banner */
 
 .banner {
-    position: relative;
-    background-color: blue;
-    color: white;
+    background-color: #2f86d6;
     width: 100%;
-    height: 456px;
+    padding: 180px 0px;
 }
 
-.banner .texto {
+.grupo-banner {
+    position: relative;
+    width: 1024px;
+    height: 456px;
+    margin: 0px auto;
+}
+
+.grupo-banner .texto {
     position: absolute;
-    width: 500px;
+    width: 470px;
     height: 180px;
     top: 138px;
-    left: 15%;
+    left: 0;
 }
 
-.banner .texto p {
-    padding-bottom: 20px;
-}
-
-.banner .texto h2 {
+.banner .texto h1 {
+    font-size: 28px;
+    color: #fff;
     padding-bottom: 30px;
 }
 
-.banner img {
+.banner .texto p {
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.grupo-banner img {
     position: absolute;
     top: 0;
-    right: 15%;
+    right: 0;
 }
 
-/* seção anúncio */
+/* seção 1º anúncio */
+
+.primeiro-anuncio, .segundo-anuncio {
+    width: 100%;
+    color: #fff;
+    padding: 40px 0px;
+}
 
 .primeiro-anuncio {
+    background-color: #233032;
+}
+
+.texto-anuncio {
     position: relative;
-    width: 100%;
-    height: 80px;
-    background-color: rgb(42, 42, 66);
-    color: #fff;
+    width: 1024px;
+    min-height: 70px;
+    margin: 0px auto;
 }
 
-.primeiro-anuncio .texto-anuncio {
+.texto-anuncio h3 {
     position: absolute;
-    top: 14px;
-    left: 15%;
+    top: 0;
+    left: 0;
+    padding: 5px;
 }
 
-.texto-anuncio h3, .texto-anuncio p {
-    padding: 3px;
-}
-
-.primeiro-anuncio .tabela-preco {
+.texto-anuncio p {
     position: absolute;
-    background-color: rgb(0, 0, 255);
-    top: 20px;
-    right: 15%;
-    padding: 10px;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
 }
 
-.tabela-preco img, .tabela-preco a {
-    padding: 0px 3px;
-}
-
-.tabela-preco a {
-    font-size: 16px;
+.texto-anuncio a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    text-align: center;
+    background-color: #2f86d6;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    font-size: 18px;
     text-decoration: none;
     color: #fff;
+}
+
+.texto-anuncio img {
+    padding: 0px 10px;
 }
 
 /* seção informações */
 
 #informacoes {
-    position: relative;
+    background-color: #fff;
     width: 100%;
-    height: 450px;
-    box-sizing: border-box;
+    padding: 100px 0px;
+    /* height: 450px; */
+    text-align: center;
+}
+
+#informacoes h2 {
+    width: 900px;
+    margin: 0px auto 20px auto;
+    font-size: 32px;
+}
+
+#informacoes span {
+    font-size: 32px;
+    color: #2f86d6;
 }
 
 #informacoes .imagens {
-    display: inline;
+    width: 1024px;
+    white-space: nowrap;
+    border: 2px solid;
+    margin: 0px auto;
+    text-align: center;
 }
 
 .imagens .info {
-    width: 200px;
+    display: inline-block;
+    background-color: beige;
+    width: 250px;
+    height: 200px;
+    margin: 25px auto;
+    padding: 15px;
+    text-align: center;
 }
 
 #informacoes img {
     width: 100px;
     height: 100px;
+}
+
+#informacoes h3 {
+    font-size: 18px;
+}
+
+#informacoes p {
+    font-size: 16px;
+}
+
+/* seção 2º anúncio */
+
+.segundo-anuncio {
+    background-color: #2f86d6;
+}
+
+.texto-anuncio .tabela2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    text-align: center;
+    background-color: #233032;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.texto-anuncio img {
+    padding: 0px 10px;
+}
+
+/* seção planos */
+
+.tabela-planos {
+    width: 100%;
+    text-align: center;
+}
+
+.tabela-planos table {
+    width: 1024px;
+    padding: 100px 0px;
 }
