@@ -240,3 +240,10 @@
     width: 1024px;
     padding: 100px 0px;
 }
+
+/* seção rodapé */
+
+.rodape {
+    width: 100%;
+    text-align: center;
+}
