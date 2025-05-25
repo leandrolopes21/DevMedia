@@ -4,18 +4,149 @@
     box-sizing: border-box;
 }
 
+/* seção topo */
+
 .topo {
-    width: 100%;
-    height: 100px;
     background-color: #fff;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    /* background-color: #fff; */
+    z-index: 100;
 }
 
-.logo {
+.topo img {
+    position: absolute;
     width: 50px;
     height: 50px;
+    top: 25px;
+    left: 15%;
 }
 
+.topo h1 {
+    position: absolute;
+    top: 25px;
+    left: 20%;
+}
+
+.topo p {
+    position: absolute;
+    top: 65px;
+    left: 20%;
+}
+
+.topo .links {
+    position: absolute;
+    width: 547px;
+    top: 50px;
+    right: 15%;
+    text-align: center;
+    border: 2px solid;
+}
+
+.topo .links a {
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+/* seção banner */
+
 .banner {
-    margin-top: 100px;
+    position: relative;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    height: 456px;
+}
+
+.banner .texto {
+    position: absolute;
+    width: 500px;
+    height: 180px;
+    top: 138px;
+    left: 15%;
+}
+
+.banner .texto p {
+    padding-bottom: 20px;
+}
+
+.banner .texto h2 {
+    padding-bottom: 30px;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    right: 15%;
+}
+
+/* seção anúncio */
+
+.primeiro-anuncio {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(42, 42, 66);
+    color: #fff;
+}
+
+.primeiro-anuncio .texto-anuncio {
+    position: absolute;
+    top: 14px;
+    left: 15%;
+}
+
+.texto-anuncio h3, .texto-anuncio p {
+    padding: 3px;
+}
+
+.primeiro-anuncio .tabela-preco {
+    position: absolute;
+    background-color: rgb(0, 0, 255);
+    top: 20px;
+    right: 15%;
+    padding: 10px;
+}
+
+.tabela-preco img, .tabela-preco a {
+    padding: 0px 3px;
+}
+
+.tabela-preco a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* seção informações */
+
+#informacoes {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+}
+
+#informacoes .imagens {
+    display: inline;
+}
+
+.imagens .info {
+    width: 200px;
+}
+
+#informacoes img {
+    width: 100px;
+    height: 100px;
 }
