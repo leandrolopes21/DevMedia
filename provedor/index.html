@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Provedor</title>
+    <link rel="stylesheet" href="css/estiloHome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -11,16 +12,129 @@
 <body>
     <div class="topo">
         <div class="logo">
-            <img src="imagens/logo-icone.png" alt="logo-icone">
+            <!-- <img src="imagens/logo-icone.png" alt="logo-icone"> -->
             <h1>AlfaTech</h1>
             <p>Soluções em hospedagem</p>
         </div>
         <div class="links">
-            <a href="#infos">INFORMAÇÕES</a>
+            <a href="#informacoes">INFORMAÇÕES</a>
             <a href="#planos">PLANOS</a>
-            <a href="#precos">PREÇOS</a>
-            <a href="#contato">CONTATO</a>
+            <a href="tabela_precos.html" target="_blank">PREÇOS</a>
+            <a href="#contatos">CONTATO</a>
         </div>
+    </div>
+    <div class="banner">
+        <div class="texto">
+            <p>Simples - Fácil de usar - 10x mais rápido!</p>
+            <h2>O melhor serviço de hospedagem na web para o seu site.</h2>
+            <p>Obtenha a melhor velocidade para o seu site. Não perca mais clientes por causa de lentidão na sua hospedagem.</p>
+        </div>
+        <img src="imagens/imagem-banner.png" alt="banner">
+    </div>
+    <div id="anuncio" class="primeiro-anuncio">
+        <div class="texto">
+            <h3>Hospede seu site por apenas R$29 por mês</h3>
+            <p>Também temos planos gratuitos. Adquira já o seu.</p>
+        </div>
+        <a href="tabela_precos.html"><img src="imagens/icone-foguete.png">TABELA DE PREÇOS</a>
+    </div>
+    <div id="informacoes">
+        <h2>Existem diversos serviços de hospedagem de sites. Porque você deve <span>nos escolher?</span></h2>
+        <div class="imagens">
+            <div class="info1">
+                <img src="imagens/icone-engrenagens.png" alt="icone-engrenagens">
+                <h3>Fácil de configurar</h3>
+                <p>Facilmente configurável em plataformas CMS populares - Wordpress, Joomia ...</p>
+            </div>
+            <div class="info2">
+                <img src="imagens/cloud-icone.png" alt="cloud-icone">
+                <h3>Servidores 100% Online</h3>
+                <p>Serviços que operam 100% do tempo para manter o seu site online...</p>
+            </div>
+            <div>
+                <img src="imagens/icone-suporte.png" alt="icone-suporte">
+                <h3>Suporte 24/7</h3>
+                <p>Suporte altamente treinado e especializado em soluções de Cloud...</p>
+            </div>
+        </div>
+    </div>
+    <div id="planos" class="tabela-planos">
+        <h2>Pague <span>somente</span> pelo que for usar. Sem cobranças adicionais!</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th><h2>PESSOAL</h2></th>
+                    <th><h2>PROFISSIONAL</h2></th>
+                    <th><h2>EMPRESARIAL</h2></th>
+                    <th><h2>BIG TECHS</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="imagens/pessoal-icone.png"></td>
+                    <td><img src="imagens/equipe-icone.png"></td>
+                    <td><img src="imagens/empresa-icone.png"></td>
+                    <td><img src="imagens/big-tech.png"></td>
+                </tr>
+                <tr>
+                    <td><span class="tabela">Indicado para uso pessoal</span></td>
+                    <td><span class="tabela">Indicado para profissionais de T.i.</span></td>
+                    <td><span class="tabela">Indicado para empresas</span></td>
+                    <td><span class="tabela">Indicado para grandes empresas</span></td>
+                </tr>
+                <tr>
+                    <td>1 usuário</td>
+                    <td>10 usuários</td>
+                    <td>25 usuários</td>
+                    <td>50 usuários</td>
+                </tr>
+                <tr>
+                    <td>1 Domínio grátis</td>
+                    <td>2 Domínios grátis</td>
+                    <td>2 Domínios grátis</td>
+                    <td>3 Domínios grátis</td>
+                </tr>
+                <tr>
+                    <td>200GB SSD espaço</td>
+                    <td>500GB SSD espaço</td>
+                    <td>1TB SSD espaço</td>
+                    <td>2TB SSD espaço</td>
+                </tr>
+                <tr>
+                    <td>Ofertas especiais</td>
+                    <td>Ofertas especiais</td>
+                    <td>Ofertas especiais</td>
+                    <td>Ofertas especiais</td>
+                </tr>
+                <tr>
+                    <td>Suporte limitado</td>
+                    <td>Suporte ilimitado</td>
+                    <td>Suporte ilimitado</td>
+                    <td>Suporte ilimitado</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="anuncio" class="segundo-anuncio">
+        <div class="texto">
+            <h3>Mais de 20.000 pessoas confiam na AlfaTech! Seja um deles você também!</h3>
+            <a href="tabela_precos.html" target="_blank"><img src="imagens/icone-foguete.png">TABELA DE PREÇOS</a>
+        </div>
+    </div>
+    <div class="rodape">
+        <div class="logo">
+            <img src="imagens/logo-icone.png" alt="logo-icone">
+            <h1>AlfaTech</h1>
+            <p>Soluções em hospedagem</p>
+        </div>
+        <div id="contatos">
+            <p>Soluções em hospedagem</p>
+            <p>Telefone & Whatsapp: (41) 99719-9463</p>
+            <p>E-mail: le21brad@gmail.com</p>
+            <p>Endereço: Rua Eugênio Flor 790 - Abranches - Curitiba PR</p>
+            <p>© AlfaTech - Soluções em hospedagem - Todos os direitos reservados</p>
+        </div>
+        <p>Desenvolvido por &copy; Leandro Lopes</p>
     </div>
 </body>
 </html>
