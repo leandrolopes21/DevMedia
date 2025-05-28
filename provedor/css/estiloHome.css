@@ -146,6 +146,7 @@
     font-size: 18px;
     text-decoration: none;
     color: #fff;
+    border-radius: 5px;
 }
 
 .texto-anuncio img {
@@ -154,54 +155,43 @@
 
 /* seção informações */
 
-#informacoes {
-    background-color: #fff;
-    width: 100%;
+.secao-informacoes {
     padding: 100px 0px;
-    /* height: 450px; */
     text-align: center;
 }
 
-#informacoes h2 {
+.secao-informacoes h2 {
     width: 900px;
-    margin: 0px auto 20px auto;
     font-size: 32px;
+    margin: 0px auto 50px;
 }
 
-#informacoes span {
-    font-size: 32px;
+.secao-informacoes h2 span {
     color: #2f86d6;
 }
 
-#informacoes .imagens {
-    width: 1024px;
-    white-space: nowrap;
-    border: 2px solid;
+.container-info {
+    max-width: 1024px;
+    height: 240px;
+    display: flex;
+    flex-flow: row nowrap;
     margin: 0px auto;
-    text-align: center;
 }
 
-.imagens .info {
-    display: inline-block;
-    background-color: beige;
-    width: 250px;
-    height: 200px;
-    margin: 25px auto;
-    padding: 15px;
-    text-align: center;
+.container-info div {
+    width: 33%;
 }
 
-#informacoes img {
+.container-info div img {
     width: 100px;
-    height: 100px;
 }
 
-#informacoes h3 {
-    font-size: 18px;
+.container-info div h3 {
+    margin: 20px;
 }
 
-#informacoes p {
-    font-size: 16px;
+.container-info div p {
+    padding: 0px 15px;
 }
 
 /* seção 2º anúncio */
@@ -230,15 +220,67 @@
 }
 
 /* seção planos */
+/* Aqui temos a tabela */
 
 .tabela-planos {
-    width: 100%;
-    text-align: center;
+    padding: 100px 0px;
+    background-color: #f1f3f7;
 }
 
-.tabela-planos table {
-    width: 1024px;
-    padding: 100px 0px;
+.tabela-planos h2 {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 32px;
+}
+
+.tabela-planos h2 span {
+    color: #2f86d6;
+}
+
+table {
+    border-radius: 4px;
+    margin: auto;
+    box-shadow: 0px 2px 40px 15px rgba(47, 134, 214, 1);
+}
+
+table thead th {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #fff;
+}
+
+table thead th h3 {
+    margin-bottom: 20px;
+}
+
+table thead th img {
+    width: 100px;
+    margin: auto;
+}
+
+table thead th p {
+    max-width: 150px;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #a89f9f;
+}
+
+table tbody td {
+    width: 250px;
+    max-width: 1024px;
+    text-align: center;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.linha-impar {
+    background-color: #f6f6f6;
+}
+
+.linha-par {
+    background-color: #fff;
 }
 
 /* seção rodapé */
@@ -246,4 +288,59 @@
 .rodape {
     width: 100%;
     text-align: center;
+    background-color: #fff;
+}
+
+.logo {
+    position: relative;
+    min-width: 350px;
+    max-width: 400px;
+    height: 100px;
+    top: 10px;
+    margin: 0px auto 30px;
+}
+
+.logo img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    left: 0px;
+}
+
+.logo h1 {
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    font-size: 32px;
+    color: #000000;
+}
+
+.logo p {
+    position: absolute;
+    bottom: 15px;
+    left: 110px;
+    font-size: 16px;
+    color: #2f86d6;
+}
+
+.secao-contatos {
+    background-color: #fff;
+    width: 1024px;
+    margin: 0px auto;
+    font-size: 16px;
+}
+
+.secao-contatos p {
+    padding: 10px 0px;
+}
+
+.rodape .dev {
+    background-color: #f1f3f7;
+    padding: 10px 0px;
+}
+
+.rodape .dev span {
+    font-style: italic;
+    color: #2f86d6;
 }
