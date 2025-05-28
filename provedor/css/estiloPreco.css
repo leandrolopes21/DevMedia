@@ -60,6 +60,61 @@
     color: #fff;
 }
 
+/* seção tabela */
+
+.precos {
+    background-color: #fff;
+    width: 1024px;
+    padding: 20px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.precos table {
+    width: 960px;
+    margin: 0px auto;
+    box-shadow: 0.5px 0.5px 1px 1px #a8a4a4;
+}
+
+.precos .vazio {
+    background-color: #fff;
+}
+
+.precos table thead tr th {
+    background-color: #f1f3f7;
+    width: 80px;
+    padding: 15px 0px;
+}
+
+.precos table thead tr th h3 {
+    font-size: 10px;
+    color: #a8a4a4;
+    padding: 5px 0px 10px 0px;
+}
+
+.precos table thead tr th p {
+    font-size: 30px;
+    color: #233032;
+}
+
+.precos table tbody tr td {
+    font-size: 10px;
+    font-weight: 600;
+    color: #233032;
+    padding: 15px 5px;
+    box-shadow: 0px 0px 1px 1px #f1f3f7;
+}
+
+.precos table tbody tr td span {
+    color: #2f86d6;
+}
+
+.precos table tbody tr .cor-de-fundo {
+    background-color: #f1f3f7;
+    text-align: left;
+    box-shadow: 1px 1px 1px 1px #fff;
+}
+
 /* seção rodapé */
 
 .rodape {
