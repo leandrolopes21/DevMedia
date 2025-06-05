@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.topo {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #27d76b;
+    text-align: center;
+}
+
+.conteiner {
+    max-width: 1024px;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    background-color: #212121;
+    color: #fff;
+}
+
+.subconteiner1 {
+    width: 100%;
+}
+
+.subconteiner2 {
+    width: 100%;
+    height: 150px;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
