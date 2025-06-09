@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* seção topo */
+
+.topo {
+    background-color: #2f86d6;
+    color: #fff;
+    width: 100%;
+    padding: 35px 0px;
+}
+
+.grupo-topo {
+    position: relative;
+    width: 1024px;
+    height: 70px;
+    margin: 0px auto;
+}
+
+.grupo-topo img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 0;
+    left: 0;
+}
+
+.topo h1 {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    font-size: 32px;
+    color:#000000;
+}
+
+.topo p {
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.topo .links {
+    position: absolute;
+    width: 547px;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.topo .links a {
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* seção tabela */
+
+.precos {
+    background-color: #fff;
+    width: 1024px;
+    padding: 20px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.precos table {
+    width: 960px;
+    margin: 0px auto;
+    box-shadow: 0.5px 0.5px 1px 1px #a8a4a4;
+}
+
+.precos .vazio {
+    background-color: #fff;
+}
+
+.precos table thead tr th {
+    background-color: #f1f3f7;
+    width: 80px;
+    padding: 15px 0px;
+}
+
+.precos table thead tr th h3 {
+    font-size: 10px;
+    color: #a8a4a4;
+    padding: 5px 0px 10px 0px;
+}
+
+.precos table thead tr th p {
+    font-size: 30px;
+    color: #233032;
+}
+
+.precos table tbody tr td {
+    font-size: 10px;
+    font-weight: 600;
+    color: #233032;
+    padding: 15px 5px;
+    box-shadow: 0px 0px 1px 1px #f1f3f7;
+}
+
+.precos table tbody tr td span {
+    color: #2f86d6;
+}
+
+.precos table tbody tr .cor-de-fundo {
+    background-color: #f1f3f7;
+    text-align: left;
+    box-shadow: 1px 1px 1px 1px #fff;
+}
+
+/* seção rodapé */
+
+.rodape {
+    width: 100%;
+    text-align: center;
+    background-color: #2f86d6;
+}
+
+.logo {
+    position: relative;
+    min-width: 350px;
+    max-width: 400px;
+    height: 100px;
+    top: 10px;
+    margin: 0px auto 30px;
+}
+
+.logo img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    left: 0px;
+}
+
+.logo h1 {
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    font-size: 32px;
+    color: #000000;
+}
+
+.logo p {
+    position: absolute;
+    bottom: 15px;
+    left: 110px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.secao-contatos {
+    color: #fff;
+    width: 1024px;
+    margin: 0px auto;
+    font-size: 16px;
+}
+
+.secao-contatos p {
+    padding: 10px 0px;
+}
+
+.rodape .dev {
+    background-color: #f1f3f7;
+    padding: 10px 0px;
+}
+
+.rodape .dev span {
+    font-style: italic;
+    color: #2f86d6;
+}
