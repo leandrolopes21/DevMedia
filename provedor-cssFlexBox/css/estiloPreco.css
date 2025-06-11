@@ -7,53 +7,50 @@
 
 /* seção topo */
 
-.topo {
+.conteiner-topo {
     background-color: #2f86d6;
     color: #fff;
+    padding: 35px 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.conteiner-logo {
+    width: 350px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.conteiner-logo-imagem {
+    width: 100px;
+    height: 100px;
+}
+
+.conteiner-logo-imagem img {
     width: 100%;
-    padding: 35px 0px;
+    height: 100%;
 }
 
-.grupo-topo {
-    position: relative;
-    width: 1024px;
-    height: 70px;
-    margin: 0px auto;
-}
-
-.grupo-topo img {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    top: 0;
-    left: 0;
-}
-
-.topo h1 {
-    position: absolute;
-    top: 0;
-    left: 10%;
-    font-size: 32px;
-    color:#000000;
-}
-
-.topo p {
-    position: absolute;
-    left: 10%;
-    bottom: 0;
+.conteiner-logo p {
     font-size: 16px;
     color: #fff;
 }
 
-.topo .links {
-    position: absolute;
-    width: 547px;
-    right: 0;
-    bottom: 0;
-    text-align: center;
+.links {
+    width: 425px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.topo .links a {
+.links a {
     font-size: 18px;
     padding: 5px;
     text-decoration: none;

@@ -12,32 +12,27 @@
     padding: 35px 50px;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .conteiner-logo {
     width: 350px;
+
     display: flex;
-    flex-flow: row nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.conteiner-imagem {
-    width: 100px;
-}
-
-.conteiner-imagem img {
+.conteiner-logo-imagem {
     width: 100px;
     height: 100px;
 }
 
-.conteiner-texto {
-    padding: 10px 0;
-}
-
-.conteiner-logo h1 {
-    font-size: 32px;
-    color:#000000;
+.conteiner-logo-imagem img {
+    width: 100%;
+    height: 100%;
 }
 
 .conteiner-logo p {
@@ -47,7 +42,9 @@
 
 .links {
     width: 425px;
+
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -61,43 +58,38 @@
 
 /* seção banner */
 
-.banner {
+.secao-banner {
     background-color: #2f86d6;
+    padding: 100px 0px;
+}
+
+.conteiner {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteiner-texto {
+    color: #fff;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 1 1 300px;
+}
+
+.conteiner-imagem {
+    flex: 1 1 468px;
+}
+
+.conteiner-imagem img {
     width: 100%;
-    padding: 180px 0px;
-}
-
-.grupo-banner {
-    position: relative;
-    width: 1024px;
-    height: 456px;
-    margin: 0px auto;
-}
-
-.grupo-banner .texto {
-    position: absolute;
-    width: 470px;
-    height: 180px;
-    top: 138px;
-    left: 0;
-}
-
-.banner .texto h1 {
-    font-size: 28px;
-    color: #fff;
-    padding-bottom: 30px;
-}
-
-.banner .texto p {
-    font-size: 16px;
-    color: #fff;
-    padding-bottom: 20px;
-}
-
-.grupo-banner img {
-    position: absolute;
-    top: 0;
-    right: 0;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* seção 1º anúncio */
