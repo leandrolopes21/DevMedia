@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteiner div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+
+.maior {
+    flex-grow: 1;
+}
