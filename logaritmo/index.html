@@ -22,6 +22,8 @@
                 "O logaritmo é uma ferramenta matemática que nos ajuda a descobrir qual expoente precisamos elevar uma base para obter um determinado número"
             </p>
         </div>
+
+        <!-- Seção de texto explicativo -->
         
         <section class="conteudo-principal">
             <div>
@@ -62,25 +64,30 @@
                     Podemos generalizar a relação entre potências e logaritmos da seguinte forma:
                 </p>
                 <p>
-                    Se b^y=x,então log⁡〖b_x=y〗
+                    Se b^y=x, então log⁡〖b_x=y〗
                 </p>
             </div>
         </section>
+
+        <!-- Seção de cálculo -->
 
         <section class="calculo">
             <div class="conteiner-calculo">
                 <h2>CALCULANDO</h2>
                 <div>
-                    <label for="base">Digite o valor da base:</label>
-                    <input type="number" name="base" id="base">
+                    <label for="numero">Número:</label>
+                    <input type="number" id="numero" placeholder="Número">
                 </div>
                 <div>
-                    <label for="log">Digite o valor a ser obtido:</label>
-                    <input type="number" name="log" id="log">
+                    <label for="base">Base:</label>
+                    <input type="number" id="base" placeholder="Base">
                 </div>
                 <div>
                     <button id="btCalcular" onclick="calcular()">Calcular</button>
-                    <p id="resultado">Resultado</p>
+                    <button id="btLimpar" onclick="limpar()">Limpar</button>
+                </div>
+                <div id="resultado">
+                    
                 </div>
             </div>
         </section>
@@ -90,16 +97,7 @@
         </footer>
     </main>
 
-    <script>
-
-        var num1 = document.getElementById('base');
-        var num2 = document.getElementById('log');
-        var resultado = document.getElementById('resultado');
-
-        function calcular() {
-            var valor1 = Number(num1.value);
-            var valor2 = Number(num2.value);
-        }
-    </script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
