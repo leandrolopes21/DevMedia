@@ -68,11 +68,38 @@
         </section>
 
         <section class="calculo">
-            <div>
+            <div class="conteiner-calculo">
                 <h2>CALCULANDO</h2>
-                <P></P>
+                <div>
+                    <label for="base">Digite o valor da base:</label>
+                    <input type="number" name="base" id="base">
+                </div>
+                <div>
+                    <label for="log">Digite o valor a ser obtido:</label>
+                    <input type="number" name="log" id="log">
+                </div>
+                <div>
+                    <button id="btCalcular" onclick="calcular()">Calcular</button>
+                    <p id="resultado">Resultado</p>
+                </div>
             </div>
         </section>
+
+        <footer class="rodape">
+            <p>&copy; Leandro Lopes</p>
+        </footer>
     </main>
+
+    <script>
+
+        var num1 = document.getElementById('base');
+        var num2 = document.getElementById('log');
+        var resultado = document.getElementById('resultado');
+
+        function calcular() {
+            var valor1 = Number(num1.value);
+            var valor2 = Number(num2.value);
+        }
+    </script>
 </body>
 </html>
