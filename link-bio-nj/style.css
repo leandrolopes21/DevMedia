@@ -7,6 +7,8 @@
 /* Seção banner */
 .banner {
 	width: 100%;
+	height: 100vh;
+	padding: 0 0 100px 0;
 	font-family: 'Ysabeau Infant', sans-serif;
 }
 
@@ -18,9 +20,10 @@
 	object-fit: cover;
 }
 
-.cont {
+.conteiner-imagem {
 	width: 200px;
 	height: 200px;
+	margin: 0 auto;
 	background-color: #000;
 	border-radius: 100%;
 	display: flex;
@@ -28,53 +31,37 @@
 	justify-content: center;
 }
 
-.cont::before {
-	content: "";
-	width: 215px;
-	height: 215px;
-	position: absolute;
-	background: linear-gradient(90deg, yellow, green);
-	border-radius: 100%;
-	z-index: -1;
-
-}
-
-.conteiner {
-	width: 250px;
-	margin: 0 auto;
-	padding-top: 100px;
-}
-
-.conteiner-imagem {
-	width: 230px;
-	height: 230px;
-}
-
 .conteiner-imagem img {
-	width: 100%;
-	height: 100%;
+	width: 200px;
+	height: 200px;
 	border-radius: 100%;
 	object-fit: cover;
 }
 
-.conteiner-imagem img::before {
+.conteiner-imagem::before {
 	content: "";
-	width: 250px;
-	height: 250px;
+	width: 215px;
+	height: 215px;
 	position: absolute;
-	background: linear-gradient(90deg, yellow, green);
+	background: linear-gradient(90deg, #ffdf00, #009c3b);
 	border-radius: 100%;
 	z-index: -1;
+
 }
 
-.conteiner h1 {
+.conteiner-texto {
+	margin: 20px 0 40px 0;
+}
+
+.conteiner-texto h1,
+.estatisticas h1 {
 	font-size: 36px;
 	color: #fff;
 	text-align: center;
-	text-shadow: 1px 1px 3px #000;
+	text-shadow: 2px 2px 5px #000;
 }
 
-.conteiner h1::after {
+.conteiner-texto h1::after {
 	content: "";
 	display: inline-block;
 	background-image: url(img/verificado.png);
@@ -83,7 +70,7 @@
 }
 
 .links {
-	width: 500px;
+	width: 768px;
 	margin: 0 auto;
 	padding: 15px;
 
@@ -92,15 +79,15 @@
 }
 
 .links a {
-	background-color: #000;
+	background-color: #0200006e;
 	color: #fff;
 	width: 100%;
 	height: 50px;
-	margin: 5px 0;
+	margin: 10px 0;
 	padding: 5px;
 	text-align: center;
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 15px;
 	font-size: 18px;
 }
 
@@ -154,8 +141,32 @@
 
 /* Seção estatísticas */
 .estatisticas {
+	width: 100%;
+	height: 100vh;
 	background-image: url(img/imagem-de-fundo.jpg);
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: 'Montserrat', sans-serif;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.estatisticas h1 {
+	padding: 100px 0 40px;
+	text-align: center;
+}
+
+table {
+	width: 60%;
+	margin: 0 auto;
+	padding-bottom: 100px;
+	color: #fff;
+}
+
+table thead tr th,
+table tbody tr td {
+	border: 1px solid;
+	padding: 20px;
 }
