@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* seção topo */
+.conteiner-topo {
+    background-color: aqua;
+}
+
+.conteiner-conteudo-topo {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteiner-conteudo-topo a {
+    width: 200px;
+    height: 100px;
+}
+
+.links-topo a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.links-topo a:hover {
+    color: #000;
+}
+
+/* seção conteúdo */
