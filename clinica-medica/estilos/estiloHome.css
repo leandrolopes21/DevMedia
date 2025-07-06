@@ -18,11 +18,22 @@ body {
     margin: 0 auto;
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.conteiner-conteudo-topo a {
+.conteiner {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
     width: 200px;
     height: 100px;
 }
@@ -38,6 +49,7 @@ body {
 }
 
 /* seção conteúdo */
+/* imagem de fundo */
 .conteiner-imagem-fundo {
     background-image: url(../imagens/recepcao.png);
     background-position: center;
@@ -57,39 +69,94 @@ body {
     align-items: center;
 }
 
-.conteiner-sobre {
-    max-width: 1024px;
-    margin: 0 auto;
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* seção sobre */
 
 .conteiner-texto {
-    width: 600px;
+    max-width: 600px;
     text-align: center;
 }
 
 .conteiner-texto h2 {
-    padding: 50px;
+    padding: 30px;
+}
+
+.conteiner-texto p {
+    padding: 10px 0;
 }
 
 .conteiner-lista {
-    width: 600px;
+    max-width: 600px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.conteiner-lista h3 {
+.conteiner-titulo-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-titulo-lista h3 {
     padding: 30px 5px;
 }
 
 .lista {
-    width: 100%;
-    margin-right: 0;
     text-align: left;
+}
+
+/* seção especialidades */
+
+.conteiner-imagens {
+    width: 100%;
+    margin: 30px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteiner-imagens figure {
+    max-width: 313px;
+    text-align: center;
+    box-shadow: 1px 1px 8px #000;
+}
+
+.conteiner-imagens figure img {
+    width: 100%;
+    height: 208.5px;
+}
+
+.conteiner-imagens figure figcaption {
+    padding: 10px;
+}
+
+.link-horarios {
+    background-color: rgb(82, 151, 151);
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* seção contatos */
+.mapa iframe {
+    width: 100%;
+}
+
+/* rodape */
+footer {
+    background-color: rgb(82, 151, 151);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* estilo para diferentes telas */
+@media screen and (max-width: 425px) {
+    .conteiner-topo-conteudo {
+
+        
+    }
 }

@@ -10,7 +10,7 @@
 <body>
     <header class="conteiner-topo">
         <div class="conteiner-conteudo-topo">
-            <a href="index.html">
+            <a class="logo" href="index.html">
                 <img src="imagens/logo.png" alt="Logo">
             </a>
             <nav class="links-topo">
@@ -25,14 +25,14 @@
             <h1>CLÍNICA MÉDICA LIFE <br> AQUI A GENTE CUIDA DE VOCÊ</h1>
         </section>
 
-        <section id="sobre" class="conteiner-sobre">
+        <section id="sobre" class="conteiner">
             <div class="conteiner-texto">
                 <h2>Sobre a clínica</h2>
                 <p>Nossa clínica está pronta para receber nossos pacientes através de uma excelente estrutura, comodidade e com segurança de que vocês precisam.</p>
             </div>
             <div class="conteiner-lista">
                 <img src="imagens/medico.jpg" alt="Médico">
-                <div>
+                <div class="conteiner-titulo-lista">
                     <h3>AQUI NA NOSSA CLÍNICA VOCÊ VAI ENCONTRAR:</h3>
                     <div class="lista">
                         <ul>
@@ -48,12 +48,12 @@
             </div>
         </section>
 
-        <section id="especialidades">
-            <div>
+        <section id="especialidades" class="conteiner">
+            <div class="conteiner-texto">
                 <h2>Uma clínica de multiespecialidade</h2>
                 <p>Nossa clínica possui diversas especialidades. Como ortopedia, pediatria, geriatria, psicologia, fisioterapia e outros.</p>
             </div>
-            <div>
+            <div class="conteiner-imagens">
                 <figure>
                     <img src="imagens/ortopedia1.png" alt="Ortopedista">
                     <figcaption>Ortopedia</figcaption>
@@ -68,30 +68,34 @@
                 </figure>
             </div>
             <nav>
-                <a href="#">VER HORÁRIOS</a>
+                <a class="link-horarios" href="especialidades.html">VER HORÁRIOS</a>
             </nav>
         </section>
 
-        <section>
-            <h2>Contato</h2>
-            <p>Nossa clínica médica está aberta de <strong>segunda à sábado das 6:00 às 21:00</strong></p>
-            <p>Através do telefone/WhatsApp <strong>(21)99966-5555</strong> você pode fazer o agendamento de consultas e exames.</p>
-            <p>Estamos localizados no estacionamento do Via Parque Shopping <strong>av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro.</strong></p>
+        <section id="contato" class="conteiner">
+            <div class="conteiner-texto">
+                <h2>Contato</h2>
+                <p>Nossa clínica médica está aberta de <strong>segunda à sábado das 6:00 às 21:00</strong></p>
+                <p>Através do telefone/WhatsApp <strong>(21)99966-5555</strong> você pode fazer o agendamento de consultas e exames.</p>
+                <p>Estamos localizados no estacionamento do Via Parque Shopping <strong>av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro.</strong></p>
+            </div>
 
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.979311360989!2d-43.36346792504264!3d-22.98273154058891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ed54ec2e1%3A0x4431d262cad1d163!2sAv.%20Ayrton%20Senna%2C%203000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-003!5e1!3m2!1spt-BR!2sbr!4v1751583321309!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.979311360989!2d-43.36346792504264!3d-22.98273154058891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ed54ec2e1%3A0x4431d262cad1d163!2sAv.%20Ayrton%20Senna%2C%203000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-003!5e1!3m2!1spt-BR!2sbr!4v1751583321309!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
 
     <footer>
-        <figure>
-            <img src="imagens/logo.png" alt="Logo">
-        </figure>
-        <div>
-            <p>Telefone e WhatsApp: (21) 99966-5555</p>
-            <p>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>
-            <p>&copy; 2020 Clínica Médica Life - Todos os direitos reservados</p>
+        <div class="conteiner-texto">
+            <figure>
+                <img src="imagens/logo.png" alt="Logo">
+            </figure>
+            <div>
+                <p>Telefone e WhatsApp: (21) 99966-5555</p>
+                <p>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>
+                <p>&copy; 2020 Clínica Médica Life - Todos os direitos reservados</p>
+            </div>
         </div>
     </footer>    
 </body>
