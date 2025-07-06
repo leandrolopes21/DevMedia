@@ -10,7 +10,7 @@ body {
 
 /* seção topo */
 .conteiner-topo {
-    background-color: aqua;
+    background-color: rgb(82, 151, 151);
 }
 
 .conteiner-conteudo-topo {
@@ -19,7 +19,7 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .conteiner-conteudo-topo a {
@@ -38,3 +38,58 @@ body {
 }
 
 /* seção conteúdo */
+.conteiner-imagem-fundo {
+    background-image: url(../imagens/recepcao.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.conteiner-imagem-fundo h1 {
+    max-width: 1024px;
+    height: 100vh;
+    margin: 0 auto;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+}
+
+.conteiner-sobre {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiner-texto {
+    width: 600px;
+    text-align: center;
+}
+
+.conteiner-texto h2 {
+    padding: 50px;
+}
+
+.conteiner-lista {
+    width: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteiner-lista h3 {
+    padding: 30px 5px;
+}
+
+.lista {
+    width: 100%;
+    margin-right: 0;
+    text-align: left;
+}
