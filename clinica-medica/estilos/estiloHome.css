@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
 }
 
 /* seção topo */
@@ -18,7 +18,7 @@ body {
     margin: 0 auto;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -29,6 +29,7 @@ body {
 
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -36,6 +37,11 @@ body {
 .logo {
     width: 200px;
     height: 100px;
+}
+
+.links-topo {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .links-topo a {
@@ -64,6 +70,7 @@ body {
     height: 100vh;
     margin: 0 auto;
     color: #fff;
+    font-size: 40px;
 
     display: flex;
     align-items: center;
@@ -162,5 +169,3 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
-/* estilo para diferentes telas */
