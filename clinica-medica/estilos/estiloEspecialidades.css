@@ -85,6 +85,7 @@ body {
 #fisioterapia {
     max-width: 1024px;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 .texto {
@@ -97,68 +98,42 @@ body {
 }
 
 .horarios {
-    width: 100%;
-
     display: flex;
-    flex-direction: row;
+    height: 240px;
+    padding: 0 20px;
 }
 
-.imagem {
-    max-width: 313px;
-    max-height: 208.5px;
-}
-
-.imagem img {
-    width: 100%;
-    height: 100%;
-}
-
-.imagem-fisio {
-    max-width: 313px;
-    max-height: 313px;
-}
-
-.imagem-fisio img {
-    width: 100%;
+.horarios img {
+    width: 30%;
     height: 100%;
 }
 
 /* conteiner tabela */
 .tabela {
-    width: calc(1024px - 313px);
-    margin: 20px 0;
+    width: 70%;
+    height: 100%;
+    border-spacing: 0;
     text-align: left;
-
-    display: flex;
-    justify-content: center;
 }
 
-.tabela table {
-    width: 100%;
-}
-
-th {
-    background-color: rgb(82, 151, 151);
+.tabela thead tr {
+    background-color: #00cad1;
     color: #fff;
-    padding-left: 20px;
-    padding-right: 75px;
 }
 
-td {
-    padding-left: 20px;
-    padding-right: 75px;
+.tabela tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
 }
 
-tr {
-    line-height: 30px;
+.tabela tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
 }
 
-tr:nth-of-type(odd) {
-    background-color: lightgray;
-}
-
-tr:nth-of-type(even) {
-    background-color: rgb(240, 240, 240);
+.tabela th, .tabela td {
+    padding: 10px;
 }
 
 /* rodape */

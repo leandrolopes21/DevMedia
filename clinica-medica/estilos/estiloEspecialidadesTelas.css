@@ -1,0 +1,47 @@
+/* estilo para diferentes telas */
+@media (max-width: 280px) {
+    body {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .conteiner-conteudo-topo {
+
+        max-width: 425px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links-topo {
+        border-top: 2px solid #0000007c;
+
+        display: flex;
+        justify-content: space-around;
+    }
+    .links-topo a {
+        font-size: 12px;
+    }    
+    
+    .horarios {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .horarios img {
+        display: none;
+    }
+
+    .tabela {
+        width: 100%;
+    }
+
+    .horarios {
+        height: auto;
+        justify-content: center;
+    }
+}
