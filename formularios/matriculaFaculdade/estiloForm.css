@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.topo {
+    background-color: #ED7C1F;
+    text-align: center;
+}
+
+.topo p {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.principal {
+    width: 425px;
+    margin: 10px auto 0 auto;
+}
+
+.principal h1 {
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.principal p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 10px 0;
+}
+
+.formulario {
+    width: 100%;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    padding: 10px 0;
+}
+
+.formulario input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ED7C1F;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* seção rodapé */
+.rodape {
+    background-color: #f1f1f1;
+    color: #ED7C1F;
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
