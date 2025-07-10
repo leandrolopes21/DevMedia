@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 425px;
+    margin: 0 auto;
+    text-align: center;
+
+    border: 1px solid;
+}
+
+.cabecalho {
+    width: 100%;
+}
+
+.cabecalho h1, .cabecalho p {
+    padding: 15px 10px;
+}
+
+.conteudo-formulario {
+    width: 100%;
+    text-align: center; 
+}
+
+.conteudo-formulario form textarea,
+.conteudo-formulario form button {
+    width: 90%;
+}
