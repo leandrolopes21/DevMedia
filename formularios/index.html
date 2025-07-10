@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="estiloForm.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
 </head>
 <body>
+    <header class="topo">
+        <p>LeandroLopes</p>
+    </header>
     <main>
-        <header class="cabecalho">
+        <section class="cabecalho">
             <h1>Caixa de Sugestões</h1>
             <p>
                 Escreva na caixa de texto abaixo, o que podemos fazer para melhorar o espaço do CyberExpress. Deixe seu elogio, crítica ou sugestão abaixo e envie para gente!
             </p>
-        </header>
+        </section>
+
         <section class="conteudo-formulario">
-            <form method="get" action="">
-                <textarea name="sugestao" id="sugestao"></textarea>
+            <form method="post" action="https://www.devmedia.com.br/codigos/formularios/aula2/">
+                <textarea name="sugestao" id="textSugestao"></textarea> <!-- textearea é usado para texto longo -->
+                <!-- <input type="text" name="sugestao" id="inputSugestao"> input é usado para texto curto -->
                 <button type="submit">Enviar sugestão</button>
             </form>
         </section>

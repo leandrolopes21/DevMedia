@@ -1,22 +1,36 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.topo {
+    background-color: rgb(0, 0, 194);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
 main {
     max-width: 425px;
-    margin: 0 auto;
-    text-align: center;
-
-    border: 1px solid;
+    margin: 20px auto;
+    padding: 15px 10px;
+    text-align: justify;
 }
 
 .cabecalho {
     width: 100%;
 }
 
-.cabecalho h1, .cabecalho p {
-    padding: 15px 10px;
+.cabecalho h1 {
+    color: rgb(0, 0, 194);
+    font-size: 30px;
+    padding: 0 20px;
+}
+
+.cabecalho p {
+    padding: 15px 20px;
+    line-height: 25px;
 }
 
 .conteudo-formulario {
@@ -27,4 +41,16 @@ main {
 .conteudo-formulario form textarea,
 .conteudo-formulario form button {
     width: 90%;
+    margin: 5px 0;
+}
+
+.conteudo-formulario form textarea {
+    height: 150px;
+}
+
+.conteudo-formulario form button {
+    height: 35px;
+    background-color: rgb(0, 0, 194);
+    color: white;
+    font-size: 16px;
 }
