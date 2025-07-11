@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Exame</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+</head>
+<body>
+
+    <header class="topo">
+        <p>MedCompany</p>
+    </header>
+
+    <main class="principal">
+
+        <h1>Formulário de Exame</h1>
+        <p>Preencha o formulário abaixo com suas informações.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula6/">
+
+            <label>Nome:</label>
+            <input type="text" name="nome" class="inputText" required>
+                
+            <label>Data de Nascimento:</label>
+            <input type="date" name="data_nascimento" class="inputText" required>                
+                
+            <label>E-mail</label>
+            <input type="email" name="email" class="inputText" required>
+
+            <div class="conteiner-escolha">
+
+                <p>Você possui tatuagem?</p>
+
+                <div class="dados">
+                    <input type="radio" name="tatuagem" id="radioSim" value="sim" required>
+                    <label for="radioSim">Sim</label>
+                </div>
+
+                <div class="dados">
+                    <input type="radio" name="tatuagem" id="radioNao" value="nao">
+                    <label for="radioNao">Não</label>
+                </div>
+
+            </div>
+
+            <div class="conteiner-escolha">
+
+                <p>Última vez que doou sangue?</p>
+
+                <div class="dados">
+                    <input type="radio" name="doacao" id="idEscolha1" value="6 Meses" required>
+                    <label for="idEscolha1">Últimos 6 meses</label>
+                </div>
+
+                <div class="dados">
+                    <input type="radio" name="doacao" id="idEscolha2" value="1 Ano">
+                    <label for="idEscolha2">1 ano ou mais</label>
+                </div>
+
+                <div class="dados">
+                    <input type="radio" name="doacao" id="idEscolha3" value="nunca">
+                    <label for="idEscolha3">Nunca doei sangue</label>
+                </div>
+
+            </div>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+
+    <footer class="rodape">
+        Leandro Lopes 2025&copy;
+    </footer>
+    
+</body>
+</html>
