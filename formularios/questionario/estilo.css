@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.topo {
+    background-color: blueviolet;
+    color: white;
+    padding: 25px;
+}
+
+.topo p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.principal {
+    width: 425px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.conteiner-texto h1 {
+    padding: 20px 0;
+}
+
+.conteiner-texto p {
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
+.formulario {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner-plataforma {
+    padding: 15px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner-plataforma p {
+    padding: 2px 0;
+}
+
+.conteiner-plataforma p label {
+    padding-left: 5px;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+}
