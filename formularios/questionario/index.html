@@ -22,70 +22,83 @@
             </p>
         </div>
 
-        <form class="formulario" action="">
+        <form class="formulario" action="https://www.devmedia.com.br/codigos/formularios/aula5/">
 
-            <p class="paragrafo-formulario">
-                Quais plataformas de jogos você utiliza?
-            </p>
+            <div class="categoria conteiner-plataforma">
 
-            <div class="conteiner-plataforma">
-                <p>
-                    <input type="checkbox" name="xbox" id="idXbox">
+                <h2 class="titulo-categoria">Quais plataformas de jogos você utiliza?</h2>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="plataformas[]" id="idXbox" value="Xbox">
                     <label for="idXbox">Xbox</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="playstation" id="idPlaystation">
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="plataformas[]" id="idPlaystation" value="Playstation">
                     <label for="idPlaystation">Playstation</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="switch" id="idSwitch">
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="plataformas[]" id="idSwitch" value="Switch">
                     <label for="idSwitch">Switch</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="stadia" id="idStadia">
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="plataformas[]" id="idStadia" value="Stadia">
                     <label for="idStadia">Stadia</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="pc" id="idPc">
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="plataformas[]" id="idPc" value="PC">
                     <label for="idPc">PC</label>
-                </p>
+                </div>
+
             </div>
 
-            <p class="paragrafo-formulario">
-                Quais seus gêneros de jogo preferidos?
-            </p>
+            <div class="categoria conteiner-genero">
 
-            <div class="conteiner-plataforma">
-                <p>
-                    <input type="checkbox" name="acao" id="idAcao">
+                <h2 class="titulo-categoria">Quais seus gêneros de jogos preferidos?</h2>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="generos[]" id="idAcao" value="Acao">
                     <label for="idAcao">Ação</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="aventura" id="idAventura">
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="generos[]" id="idAventura" value="Aventura">
                     <label for="idAventura">Aventura</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="plataforma" id="idPlataforma">
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="generos[]" id="idPlataforma" value="Plataforma">
                     <label for="idPlataforma">Plataforma</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="rpg" id="idRpg">
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="generos[]" id="idRpg" value="RPG">
                     <label for="idRpg">RPG</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="tiro" id="idTiro">
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="generos[]" id="idTiro" value="Tiro">
                     <label for="idTiro">Tiro</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="corrida" id="idCorrida">
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="generos[]" id="idCorrida" value="Corrida">
                     <label for="idCorrida">Corrida</label>
-                </p>
+                </div>
+
             </div>
 
             <button type="submit">Enviar Questionário</button>
 
         </form>
     </main>
+
+    <footer>
+        Leandro Lopes&copy;
+    </footer>
     
 </body>
 </html>

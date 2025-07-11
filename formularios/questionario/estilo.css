@@ -18,6 +18,7 @@ body {
     font-weight: 500;
 }
 
+/* seção principal */
 .principal {
     width: 425px;
     margin: 0 auto;
@@ -31,33 +32,42 @@ body {
 .conteiner-texto p {
     padding-bottom: 20px;
     line-height: 25px;
+    font-size: 18px;
 }
 
+/* seção de formulario */
 .formulario {
     width: 100%;
-
-    display: flex;
-    flex-direction: column;
 }
 
-.conteiner-plataforma {
+.titulo-categoria {
     padding: 15px 0;
+    font-size: 23px;
+}
 
+.grupo-opcao {
     display: flex;
-    flex-direction: column;
 }
 
-.conteiner-plataforma p {
-    padding: 2px 0;
-}
-
-.conteiner-plataforma p label {
+.grupo-opcao label {
     padding-left: 5px;
 }
 
+/* botão */
 button {
     background-color: blueviolet;
     color: white;
+    width: 100%;
     font-size: 16px;
+    margin-top: 20px;
     padding: 5px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    color: blueviolet;
+    width: 425px;
+    margin: 25px auto 0 auto;
+    padding: 10px 0;
+    text-align: center;
 }
