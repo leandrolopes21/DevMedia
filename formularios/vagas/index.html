@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas para Desenvolvedores</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+</head>
+<body>
+
+    <header class="topo">
+        <p>Vagas</p>
+    </header>
+
+    <main class="principal">
+
+        <h1>Formulário de Vagas</h1>
+        <p>Preencha o formulário abaixo com suas informações.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula6/">
+
+            <label>Nome</label>
+            <input type="text" name="nome" class="inputText" required>
+                
+            <label>Data de Nascimento</label>
+            <input type="date" name="data_nascimento" class="inputText" required>                
+                
+            <label>E-mail</label>
+            <input type="email" name="email" class="inputText" required>
+
+            <label>Estado</label>
+            <select name="estados-brasil">
+                <option value="">Selecione seu Estado</option>
+
+                <optgroup label="Regiao Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="Am">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+
+                <optgroup label="Regiao Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                </optgroup>
+
+                <optgroup label="Região Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                </optgroup>
+
+                <optgroup label="Região SUdeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RG">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+
+            <label>Tecnologias</label>
+            <select name="tecnologias[]" size="5" multiple>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="C#">C#</option>
+                <option value="HTML">HTML</option>
+                <option value="Java">Java</option>
+                <option value="Javascript">Javascript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Phyton</option>
+                <option value="Ruby">Ruby</option>
+                <option value="XML">XML</option>
+            </select>
+
+            <button type="submit">Enviar Formulário</button>
+
+        </form>
+    </main>
+
+    <footer class="rodape">
+        Leandro Lopes 2025&copy;
+    </footer>
+    
+</body>
+</html>
