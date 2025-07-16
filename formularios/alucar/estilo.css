@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Topo */
+.topo {
+    border-bottom: 1px solid #d5d5d5;
+}
