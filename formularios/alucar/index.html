@@ -25,9 +25,9 @@
     <section class="secao-largura-limitada secao-conteudo">
         <h3>Sobre nós</h3>
         <p>Há 45 anos atuando na área de veículos com segurança e garantia de satisfação. Temos os melhores preços e modelos do mercado.</p>
-        <img class="img-conteudo" src="" alt="">
-        <img class="img-conteudo" src="" alt="">
-        <img class="img-conteudo" src="" alt="">
+        <img class="img-conteudo" src="img/img1.jpg" alt="Imagem 1">
+        <img class="img-conteudo" src="img/img2.jpg" alt="Imagem 2">
+        <img class="img-conteudo" src="img/img3.jpg" alt="Imagem 3">
         <p><span>O compromisso da AluCar é com a qualidade.</span></p>
         <p><span>Os melhores carros estão aqui!</span></p>
         <p><span>Assistência 24hrs.</span></p>
@@ -46,56 +46,68 @@
                 <fieldset>
                     <legend>Dados pessoais</legend>
             
-                    <label>Nome</label>
-                    <input type="text" name="nome" placeholder="Digite seu nome" required>
+                    <div class="grupo-campo">
+                        <label>Nome</label>
+                        <input type="text" name="nome" placeholder="Digite seu nome" required>
+                    </div>
 
-                    <label>Data de Nascimento</label>
-                    <input type="date" name="data_nascimento" required>
+                    <div class="grupo-campo">
+                        <label>Data de Nascimento</label>
+                        <input type="date" name="data_nascimento" required>
+                    </div>
             
-                    <label>Telefone</label>
-                    <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                    <div class="grupo-campo">
+                        <label>Telefone</label>
+                        <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
                 </fieldset>
 
                 <fieldset>
                     <legend>CNH</legend>
 
-                    <label>Número do Registro</label>
-                    <input type="number" name="numero_registro" placeholder="Informe o número da sua CNH" required>
+                    <div class="grupo-campo">
+                        <label>Número do Registro</label>
+                        <input type="number" name="numero_registro" placeholder="Informe o número da sua CNH" required>
+                    </div>
 
-                    <label>Validade</label>
-                    <input type="date" name="validade" required>
+                    <div class="grupo-campo">
+                        <label>Validade</label>
+                        <input type="date" name="validade" required>
+                    </div>
                 </fieldset>
 
                 <fieldset>
                     <legend>Carro</legend>
 
-                    <label>Modelo do Carro</label>
-                    <select name="carro" required>
-                        <option value="">Escolha um carro</option>
-                        <optgroup label="Volkswagem">
-                            <option value="gol">Gol</option>
-                            <option value="golf">Golf</option>
-                            <option value="fox">Fox</option>
-                        </optgroup>
-                        <optgroup label="Fiat">
-                            <option value="uno">Uno</option>
-                            <option value="siena">Siena</option>
-                            <option value="palio">Palio</option>
-                        </optgroup>
-                        <optgroup label="Nissan">
-                            <option value="frontier">Frontier</option>
-                            <option value="versa">Versa</option>
-                            <option value="skyline">Skyline GT-R</option>
-                        </optgroup>
-                    </select>
+                    <div class="grupo-campo">
+                        <label>Modelo do Carro</label>
+                        <select name="carro" required>
+                            <option value="">Escolha um carro</option>
+                            <optgroup label="Volkswagem">
+                                <option value="gol">Gol</option>
+                                <option value="golf">Golf</option>
+                                <option value="fox">Fox</option>
+                            </optgroup>
+                            <optgroup label="Fiat">
+                                <option value="uno">Uno</option>
+                                <option value="siena">Siena</option>
+                                <option value="palio">Palio</option>
+                            </optgroup>
+                            <optgroup label="Nissan">
+                                <option value="frontier">Frontier</option>
+                                <option value="versa">Versa</option>
+                                <option value="skyline">Skyline GT-R</option>
+                            </optgroup>
+                        </select>
+                    </div>
                 </fieldset>
                 <button type="submit">Enviar Dados</button>
             </form>
         </section>
     </main>
 
-    <footer class="rodape">
-        Leandro Lopes 2025&copy;
+    <footer>
+        <p>Leandro Lopes 2025&copy; AluCar</p>
     </footer>
     
 </body>
