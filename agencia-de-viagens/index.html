@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A Agência de Viagens encontra o hotel certo para você!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens</title>
+</head>
+<body>
+
+    <header class="secao-topo">
+        <div class="secao-conteudo-topo">
+            <img src="" alt="">
+            <p>Agência de Viagens</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao-formulario">
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <h2>Solicite um orçamento</h2>
+                </div>
+                <div>
+                    <h3>Informe seus dados</h3>
+                    <form method="post" action="">
+
+                        <fieldset>
+
+                            <div class="grupo-dados">
+                                <div class="grupo-campo">
+                                    <label>Nome</label>
+                                    <input type="text" name="nome">
+                                </div>
+                                <div class="grupo-campo">
+                                    <label>Email</label>
+                                    <input type="email" name="email">
+                                </div>
+                                <div class="grupo-campo">
+                                    <label>Celular</label>
+                                    <input type="tel" name="telefone">
+                                </div>
+                            </div>
+
+                            <div class="grupo-escolha">
+                                <div>
+                                    <label>Data da ida</label>
+                                    <input type="date" name="data_ida" required>
+                                </div>
+                                <div>
+                                    <label>Data da volta</label>
+                                    <input type="date" name="data_volta">
+                                </div>
+                            </div>
+
+                            <div class="grupo-escolha">
+                                <div>
+                                    <label>Origem</label>
+                                    <select name="partida">
+
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>Destino</label>
+                                    <select name="chegada">
+
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <label>Quarto com cama infantil</label>
+
+                            <div class="grupo-preferencia">
+                                <div>
+                                    <input type="radio" name="cama" value="sim" id="radioSim">
+                                    <label for="radioSim">Sim</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="cama" value="nao" id="radioNao">
+                                    <label for="radioNao">Não</label>
+                                </div>
+                            </div>
+
+                            <label>Preferências da hospedagem</label>
+
+                            <div class="grupo-preferencia">
+                                <div>
+                                    <input type="checkbox" name="preferencia[]" value="piscina" id="idPiscina">
+                                    <label for="idPiscina">Piscina</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="preferencia[]" value="wi-fi" id="idWifi">
+                                    <label for="idWifi">Wi-Fi</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="preferencia[]" value="garagem" id="idGaragem">
+                                    <label for="idGaragem">Garagem</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="preferencia[]" value="suite" id="idSuite">
+                                    <label for="idSuite">Suíte</label>
+                                </div>
+                            </div>
+
+                            <button type="submit">Solicitar orçamento</button>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-ofertas">
+            <h2>Ofertas</h2>
+            <h3>Com até 50% de desconto</h3>
+
+            <div class="conteiner-cards">
+
+                <figure>
+                    <img src="" alt="Rio de Janeiro">
+                    <figcaption>Rio de Janeiro</figcaption>
+                </figure>
+                    
+                <div>
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption>Manaus</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption>São Paulo</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption>Rio de Janeiro</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption>Maranhão</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
