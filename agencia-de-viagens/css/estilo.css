@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #80808029;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Seção Topo */
+.secao-topo {
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+}
+
+.secao-conteudo-topo {
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.secao-conteudo-topo img {
+    width: 32px;
+    height: 32px;
+}
+
+.secao-conteudo-topo p {
+    font-size: 24px;
+    color: #5d15d1;
+    margin-left: 10px;
+}
+
+/* Seção Formulário */
+.secao-formulario {
+    width: 100%;
+    background-image: url(../imagens/bahia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secao-largura-limitada {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;    
+}
+
+.conteiner-logo-texto {
+    width: 100%;
+    height: 35px;
+    background-color: #5d15d1;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-logo-texto img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+.conteiner-logo-texto h2 {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* Formulário */
+.conteiner-form {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 25px 20px 25px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner-form h3 {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    font-size: 16px;
+}
+
+.grupo-escolha {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.grupo-escolha div {
+    width: calc((100% - 20px) / 2);
+}
+
+.grupo-dados input,
+.grupo-escolha input,
+.grupo-escolha select {
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
