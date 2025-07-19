@@ -120,3 +120,41 @@ label {
     padding: 0 5px;
     box-sizing: border-box;
 }
+
+.grupo-preferencia {
+    width: 100%;
+    margin: 10px 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.grupo-preferencia div {
+    width: 120px;
+
+    display: flex;
+}
+
+.grupo-preferencia input {
+    width: 15px;
+}
+
+.grupo-preferencia label {
+    margin-left: 8px;
+}
+
+button {
+    width: 160px;
+    height: 32px;
+    margin-top: 12px;
+    background-color: #5d15d1;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Seção Ofertas */
