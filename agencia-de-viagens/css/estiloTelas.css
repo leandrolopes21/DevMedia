@@ -47,5 +47,18 @@
 }
 
 @media (max-width: 540px) {
-    
+    .grupo-escolha,
+    .grupo-preferencia {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grupo-escolha div,
+    .grupo-preferencia div {
+        width: 100%;
+    }
+
+    .grupo-preferencia div {
+        margin: 10px 0;
+    }
 }
