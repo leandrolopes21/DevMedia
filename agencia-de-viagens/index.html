@@ -32,79 +32,91 @@
                     <h3>Informe seus dados</h3>
 
                     <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
-                        <fieldset>
-                            <div class="grupo-dados">
-                                <div class="grupo-campo">
-                                    <label>Nome</label>
-                                    <input type="text" name="nome">
-                                </div>
-                                <div class="grupo-campo">
-                                    <label>Email</label>
-                                    <input type="email" name="email">
-                                    </div>
-                                <div class="grupo-campo">
-                                    <label>Celular</label>
-                                    <input type="tel" name="celular">
-                                </div>
+                        <div class="grupo-dados">
+                            <div class="grupo-campo">
+                                <label>Nome</label>
+                                <input type="text" name="nome" placeholder="Nome completo" required>
                             </div>
-                            <div class="grupo-escolha">
-                                <div>
-                                    <label>Data da ida</label>
-                                    <input type="date" name="partida" required>
-                                </div>
-                                <div>
-                                    <label>Data da volta</label>
-                                    <input type="date" name="chegada">
-                                </div>
+                            <div class="grupo-campo">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="Email para contato" required>
                             </div>
-                            <div class="grupo-escolha">
-                                <div>
-                                    <label>Origem</label>
-                                    <select name="origem"></select>
-                                </div>
-                                <div>
-                                    <label>Destino</label>
-                                    <select name="destino"></select>
-                                </div>
+                            <div class="grupo-campo">
+                                <label>Celular</label>
+                                <input type="tel" name="celular" placeholder="(XX) XXXXX-XXXX">
                             </div>
+                        </div>
+                        <div class="grupo-escolha">
+                            <div>
+                                <label>Data da ida</label>
+                                <input type="date" name="partida" required>
+                            </div>
+                            <div>
+                                <label>Data da volta</label>
+                                <input type="date" name="chegada">
+                            </div>
+                        </div>
+                        <div class="grupo-escolha">
+                            <div>
+                                <label>Origem</label>
+                                <select name="origem">
+                                    <option selected>Partindo de</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Destino</label>
+                                <select name="destino">
+                                    <option selected>Indo para</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                </select>
+                            </div>
+                        </div>
 
-                            <label>Quarto com cama infantil</label>
+                        <label>Quarto com cama infantil</label>
 
-                            <div class="grupo-preferencia">
+                        <div class="grupo-preferencia">
                                 
-                                <div>
-                                    <input type="radio" name="infantil" value="sim" id="radioSim">
-                                    <label for="radioSim">Sim</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="infantil" value="nao" id="radioNao">
-                                    <label for="radioNao">Não</label>
-                                </div>
+                            <div>
+                                <input type="radio" name="infantil" value="sim" id="radioSim">
+                                <label for="radioSim">Sim</label>
                             </div>
-
-                            <label>Preferências da hospedagem</label>
+                            <div>
+                                <input type="radio" name="infantil" value="nao" id="radioNao">
+                                <label for="radioNao">Não</label>
+                            </div>
+                        </div>
+                        
+                        <label>Preferências da hospedagem</label>
                             
-                            <div class="grupo-preferencia">
+                        <div class="grupo-preferencia">
                                 
-                                <div>
-                                    <input type="checkbox" name="preferencias" value="piscina" id="idPiscina">
-                                    <label for="idPiscina">Piscina</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="preferencias" value="wi-fi" id="idWifi">
-                                    <label for="idWifi">Wi-Fi</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="preferencias" value="garagem" id="idGaragem">
-                                    <label for="idGaragem">Garagem</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="preferencias" value="suite" id="idSuite">
-                                    <label for="idSuite">Suíte</label>
-                                </div>
+                            <div>
+                                <input type="checkbox" name="preferencias[]" value="piscina" id="idPiscina">
+                                <label for="idPiscina">Piscina</label>
                             </div>
-                            <button type="submit">Solicitar orçamento</button>
-                        </fieldset>
+                            <div>
+                                <input type="checkbox" name="preferencias[]" value="wi-fi" id="idWifi">
+                                <label for="idWifi">Wi-Fi</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="preferencias[]" value="garagem" id="idGaragem">
+                                <label for="idGaragem">Garagem</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="preferencias[]" value="suite" id="idSuite">
+                                <label for="idSuite">Suíte</label>
+                            </div>
+                        </div>
+                        <button type="submit">Solicitar orçamento</button>
                     </form>
                 </div>
             </div>
@@ -116,12 +128,10 @@
 
             <div class="conteiner-cards">
 
-                <div class="card">
-                    <figure>
-                        <img src="imagens/rio.jpg" alt="Rio de Janeiro">
-                        <figcaption>Rio de Janeiro</figcaption>
-                    </figure>
-                </div>
+                <figure class="card">
+                    <img src="imagens/rio.jpg" alt="Rio de Janeiro">
+                    <figcaption>Rio de Janeiro</figcaption>
+                </figure>
                     
                 <div class="secao-cards">
                     <figure class="figuras">

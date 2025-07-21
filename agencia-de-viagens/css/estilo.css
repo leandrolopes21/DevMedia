@@ -46,13 +46,17 @@ body {
 /* Seção Formulário */
 .secao-imagem-formulario {
     width: 100%;
+    height: auto;
     background-image: url(../imagens/bahia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .secao-formulario {
+    width: 100%;
+    height: auto;
     margin: 0 auto;
+    padding: 50px 0;
 }
 
 .conteiner-logo-texto {
@@ -91,10 +95,6 @@ body {
 .conteiner-form h3 {
     font-size: 22px;
     margin-bottom: 24px;
-}
-
-fieldset {
-    border: none;
 }
 
 label {
