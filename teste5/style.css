@@ -1,0 +1,22 @@
+table, td {   
+    border: 1px solid #000000;   
+    text-align: center;
+}
+
+thead th {
+    padding: 20px 10px;
+    background-color: #000000;
+    color: #fff;
+}
+
+tbody td {
+    padding: 20px 30px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #CCCCCC;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #474747;
+}
