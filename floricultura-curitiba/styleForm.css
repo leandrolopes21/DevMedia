@@ -54,7 +54,6 @@
 
 .formulario {
     width: 100%;
-    text-align: center;
     padding: var(--spacing-xl);
     background: var(--background-color);
     border-radius: 16px;
@@ -86,6 +85,7 @@
 }
 
 form {
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

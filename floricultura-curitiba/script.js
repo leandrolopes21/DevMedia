@@ -12,6 +12,7 @@ formulario.addEventListener('submit', async (event) => {
 
     // Obtém os valores dos campos
     const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
     const ddd = document.getElementById('ddd').value;
     const fone = document.getElementById('fone').value;
     
@@ -19,10 +20,11 @@ formulario.addEventListener('submit', async (event) => {
     const telefone = `(${ddd}) ${fone}`;
 
     // Cria o objeto de dados que será enviado ao Supabase
-    // Certifique-se de que os nomes das propriedades (nome, telefone)
+    // Certifique-se de que os nomes das propriedades (nome, email e telefone)
     // correspondem exatamente aos nomes das colunas na sua tabela 'Leads'
     const lead = {
         nome: nome,
+        email: email,
         telefone: telefone
     };
 
