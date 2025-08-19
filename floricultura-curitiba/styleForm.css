@@ -38,7 +38,6 @@
 
 .form-section {
     background-color: var(--white);
-    height: 80vh;
 }
 
 .conteiner-principal {
@@ -46,7 +45,7 @@
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    padding: 30px;
+    padding: var(--spacing-sm);
 
     display: flex;
     justify-content: center;
@@ -136,7 +135,7 @@ form {
     border-radius: 5px;
 }
 
-button {
+.btn-form {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
