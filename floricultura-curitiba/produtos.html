@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon/floricultura.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CuritibaFlor - Floricultura em Curitiba</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleForm.css">
-    <link rel="stylesheet" href="estiloCadastro.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Produtos</title>
+    <link rel="stylesheet" href="styleProd.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
+</head>
+<body>
+
     <!-- Header Fixo -->
     <header class="header" id="header">
       <nav class="nav container">
@@ -21,8 +20,7 @@
         
         <div class="nav-menu">
           <ul class="nav-list">
-            <li><a href="#home" class="nav-link">Início</a></li>
-            <li><a href="produtos.html" target="_blank" class="nav-link">Produtos</a></li>
+            <li><a href="index.html" class="nav-link">Início</a></li>
             <li><a href="#sobre" class="nav-link">Sobre</a></li>
             <li><a href="#contato" class="nav-link">Contato</a></li>
           </ul>
@@ -39,28 +37,6 @@
 
     <!-- Conteúdo Principal -->
     <main>
-      <!-- Seção Imagem -->
-      <section class="hero" id="home">
-        <div class="hero-container">
-          <div class="hero-image">
-            <img src="img/pexels-wendywei-1601505.jpg" alt="Entrada da Floricultura">
-            <div class="hero-overlay"></div>
-          </div>
-          
-          <div class="hero-content">
-            <div class="container">
-              <h2 class="hero-title">Transformamos momentos especiais em memórias floridas</h2>
-              <p class="hero-description">
-                Na CuritibaFlor, cada arranjo é criado com carinho e dedicação para tornar seus momentos únicos e inesquecíveis.
-              </p>
-              <div class="hero-buttons">
-                <a href="produtos.html" target="_blank" class="btn btn-primary">Ver Produtos</a>
-                <!-- <a href="#form-contato" class="btn btn-secondary">Preencher Formulário</a> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- Seção de Destaque -->
       <section class="features" id="sobre">
@@ -68,83 +44,56 @@
           <div class="features-grid feature-flex">
 
             <div class="feature-card">
-              <div class="feature-icon">
-                <img src="img/flor-rosa.png" alt="Flor Icon">
-              </div>
-              <h3>Flores Frescas</h3>
-              <p>Trabalhamos apenas com flores da mais alta qualidade, sempre frescas e vibrantes.</p>
+                <img src="img2/900x1600_1.jpg" alt="Flor 1">
+                <h3>Nome</h3>
+                <p>Descrição</p>
             </div>
             
             <div class="feature-card">
-              <div class="feature-icon">
-                <img src="img/entrega-rapida.png" alt="Entrega Rápida Icon">
-              </div>
-              <h3>Entrega Rápida</h3>
-              <p>Entregamos em toda Curitiba e região metropolitana com agilidade e cuidado.</p>
+                <img src="img2/900x1600_2.jpg" alt="Flor 2">
+                <h3>Nome</h3>
+                <p>Descrição</p>
             </div>
             
             <div class="feature-card">
-              <div class="feature-icon">
-                <img src="img/coracao.png" alt="Coração Icon">
-              </div>
-              <h3>Feito com Amor</h3>
-              <p>Cada arranjo é preparado com muito carinho e atenção aos detalhes.</p>
+                <img src="img2/900x1600_3.jpg" alt="Flor 3">
+                <h3>Nome</h3>
+                <p>Descrição</p>
             </div>
 
             <div class="feature-card">
-              <div class="feature-icon">
-                <img src="img/teste.png" alt="Escolha">
-              </div>
-              <h3>Sua melhor escolha</h3>
-              <p>Nossa floricultura busca o que há de melhor para atender a todos os momentos.</p>
+                <img src="img2/900x1600_4.jpg" alt="Flor 4">
+                <h3>Nome</h3>
+                <p>Descrição</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="img2/900x1600_5.jpg" alt="Flor 5">
+                <h3>Nome</h3>
+                <p>Descrição</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="img2/900x1600_6.jpg" alt="Flor 6">
+                <h3>Nome</h3>
+                <p>Descrição</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="img2/900x1600_7.jpg" alt="Flor 7">
+                <h3>Nome</h3>
+                <p>Descrição</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="img2/900x1600_8.jpg" alt="Flor 8">
+                <h3>Nome</h3>
+                <p>Descrição</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Seção Formulário
-      <section class="form-section" id="form-contato">
-        <div class="conteiner-principal">
-          <div class="formulario" id="form-oculto">
-            <div class="cabecalho">
-                <h3>Cadastre-se</h3>
-                <p>Preencha seus dados para receber nossas promoções</p>
-            </div>
-
-            <form id="formulario-leads">
-              <div class="campo-nome">
-                  <label for="nome">Nome completo</label>
-                  <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-              </div>
-              <div class="campo-nome">
-                  <label for="email">E-mail</label>
-                  <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-              </div>
-              <div class="campo-telefone">
-                  <label for="telefone">Telefone</label>
-                  <div class="campo-input">
-                      <input type="text" name="ddd" id="ddd" maxlength="2" placeholder="DDD" required>
-                      <input type="text" name="fone" id="fone" maxlength="9" placeholder="Telefone" required>
-                  </div>
-              </div>
-
-              <button class="btn-form" type="submit">Cadastrar</button>
-            </form>
-
-          </div>
-
-          <div id="cadastro-sucesso">
-            <h3>Cadastro realizado com sucesso!</h3>
-            <p>Obrigado por se cadastrar. Em breve informaremos sobre nossas promoções.</p>
-          </div>
-
-          <div id="cadastro-erro">
-            <h3>Erro no cadastro</h3>
-            <p>Ocorreu um erro ao processar seu cadastro. Por favor, tente novamente mais tarde.</p>
-          </div>
-
-        </div>
-      </section> -->
     </main>
 
     <!-- Rodapé -->
@@ -233,9 +182,6 @@
       </div>
     </footer>
 
-    <!-- <script src="main.js"></script> -->
     <script src="menu.js"></script>
-    <script src="script.js"></script>
-
-  </body>
+</body>
 </html>
