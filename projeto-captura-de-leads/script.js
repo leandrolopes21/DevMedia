@@ -17,19 +17,20 @@ class LeadCapture {
     initializeEventListeners() {
         this.form.addEventListener('submit', this.handleSubmit.bind(this));
         this.newLeadBtn.addEventListener('click', this.resetForm.bind(this));
-        
-        // Input validations
+
         document.getElementById('nome').addEventListener('blur', this.validateNome.bind(this));
         document.getElementById('nome').addEventListener('input', this.clearError.bind(this, 'nome'));
-        
-        document.getElementById('ddd').addEventListener('input', this.formatDDD.bind(this));
-        document.getElementById('ddd').addEventListener('blur', this.validateDDD.bind(this));
-        
+
+        document.getElementById('email').addEventListener('blur', this.validateEmail.bind(this));
+        document.getElementById('email').addEventListener('input', this.clearError.bind(this, 'email'));
+
+        // Remova eventos de input/blur do DDD que eram para <input>
+        document.getElementById('ddd').addEventListener('change', this.validateDDD.bind(this));
+
         document.getElementById('telefone').addEventListener('input', this.formatTelefone.bind(this));
         document.getElementById('telefone').addEventListener('blur', this.validateTelefone.bind(this));
-        
-        // Clear errors on input
-        document.getElementById('ddd').addEventListener('input', this.clearError.bind(this, 'ddd'));
+
+        document.getElementById('ddd').addEventListener('change', this.clearError.bind(this, 'ddd'));
         document.getElementById('telefone').addEventListener('input', this.clearError.bind(this, 'telefone'));
     }
     
@@ -59,6 +60,7 @@ class LeadCapture {
         let isValid = true;
         
         if (!this.validateNome()) isValid = false;
+        if (!this.validateEmail()) isValid = false;
         if (!this.validateDDD()) isValid = false;
         if (!this.validateTelefone()) isValid = false;
         
@@ -88,62 +90,43 @@ class LeadCapture {
         this.hideFieldError('nome');
         return true;
     }
+
+    validateEmail() {
+        const email = document.getElementById('email').value.trim();
+        const input = document.getElementById('email');
+
+        if (!email) {
+            this.showFieldError('email', 'Email é obrigatório');
+            input.classList.add('error');
+            input.classList.remove('success');
+            return false;
+        }
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            this.showFieldError('email', 'Email inválido');
+            input.classList.add('error');
+            input.classList.remove('success');
+            return false;
+        }
+
+        input.classList.remove('error');
+        input.classList.add('success');
+        this.hideFieldError('email');
+        return true;
+    }
     
     validateDDD() {
-        const ddd = document.getElementById('ddd').value.trim();
+        const ddd = document.getElementById('ddd').value;
         const input = document.getElementById('ddd');
-        
+
         if (!ddd) {
             this.showFieldError('ddd', 'DDD é obrigatório');
             input.classList.add('error');
             input.classList.remove('success');
             return false;
         }
-        
-        if (ddd.length !== 2 || !/^\d{2}$/.test(ddd)) {
-            this.showFieldError('ddd', 'DDD deve ter 2 dígitos');
-            input.classList.add('error');
-            input.classList.remove('success');
-            return false;
-        }
-        
-        const validDDDs = [
-            '11', '12', '13', '14', '15', '16', '17', '18', '19', // SP
-            '21', '22', '24', // RJ
-            '27', '28', // ES
-            '31', '32', '33', '34', '35', '37', '38', // MG
-            '41', '42', '43', '44', '45', '46', // PR
-            '47', '48', '49', // SC
-            '51', '53', '54', '55', // RS
-            '61', // DF
-            '62', '64', // GO
-            '63', // TO
-            '65', '66', // MT
-            '67', // MS
-            '68', // AC
-            '69', // RO
-            '71', '73', '74', '75', '77', // BA
-            '79', // SE
-            '81', '87', // PE
-            '82', // AL
-            '83', // PB
-            '84', // RN
-            '85', '88', // CE
-            '86', '89', // PI
-            '91', '93', '94', // PA
-            '92', '97', // AM
-            '95', // RR
-            '96', // AP
-            '98', '99' // MA
-        ];
-        
-        if (!validDDDs.includes(ddd)) {
-            this.showFieldError('ddd', 'DDD inválido');
-            input.classList.add('error');
-            input.classList.remove('success');
-            return false;
-        }
-        
+
+        // Como só há opções válidas, não precisa validar o formato
         input.classList.remove('error');
         input.classList.add('success');
         this.hideFieldError('ddd');
@@ -212,11 +195,13 @@ class LeadCapture {
     
     getFormData() {
         const nome = document.getElementById('nome').value.trim();
+        const email = document.getElementById('email').value.trim();
         const ddd = document.getElementById('ddd').value.trim();
         const telefoneNumero = document.getElementById('telefone').value.trim();
         
         return {
             nome: nome,
+            email: email,
             telefone: `(${ddd}) ${telefoneNumero}`
         };
     }
