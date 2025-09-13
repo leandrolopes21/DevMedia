@@ -1,0 +1,35 @@
+Algoritmos - praticar
+
+Escreva um algoritmo para trocar a lâmpada;
+
+	Pegue uma escada;
+	Apoie a posição correta para alcançar a lâmpada;
+	Suba;
+	Tire a lâmpada velha;
+	Coloque a nova lâmpada;
+	Desça da escada;
+	Guarde a escada.
+
+Escreva um algoritmo para encher o tanque do carro;
+
+	Abra a portinhola de acesso ao tanque;
+	Coloque o bico no bocal de enchimento;
+	Acione o sistema da bomba para iniciar o processo;
+	Com o tanque cheio, retire o bico do bocal;
+	Guarde o bico em sua posição de descanso.
+
+Escreva um algoritmo para um software que subtrai dois números e imprime na tela o resultado;
+
+	Digite o primeiro número;
+	Armazene seu valor;
+	Digite o segundo número;
+	Armazene seu valor;
+	Calcule os dois números;
+	Imprima na tela o resultado.
+
+Escreva um algoritmo para um software que recebe o ano atual e a idade do usuário e imprime o ano que ele nasceu.
+
+	Digite sua idade;
+	Verifique no pc a data atual;
+	Subtraia a data atual pelo ano de nascimento;
+	Imprima na tela o resultado.
