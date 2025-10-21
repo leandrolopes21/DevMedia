@@ -1,11 +1,10 @@
-// Aplicação para calcular a área de um triângulo
-import calcular from 'readline-sync';
+import triangulo from 'readline-sync';
 
-console.log("\nVamos calcular a área de um triângulo!\n");
+console.log("\nCalcular a área do triângulo.\n");
 
-let base = calcular.question("Digite a base do triângulo: ");
-let altura = calcular.question("Digite a altura do triângulo: ");
+let base = triangulo.question("Digite o valor da base: ");
+let altura = triangulo.question("Digite o valor da altura: ");
 
-let area = (Number(base) * Number(altura)) / 2;
+let area = (base * altura) / 2;
 
-console.log(`\nA área do triângulo é: ${area}\n`);
+console.log("\nÁrea do triângulo = " + area);
