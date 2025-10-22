@@ -34,7 +34,14 @@ let frases = [
 
 let data_atual = new Date();
 let dia_hoje = data_atual.getDate();
+
+let frase_escolhida = frases[dia_hoje - 1];
+
+console.log("Sua frase do dia " + dia_hoje + ": " + frase_escolhida);
+
+
 // Função que retorna e (quando possível) atualiza a frase do dia na página
+/*
 function mostrarFraseDoDia() {
     // Calcula índice correto: dia 1 => índice 0
     const idx = Math.max(0, Math.min(frases.length - 1, dia_hoje - 1));
@@ -50,4 +57,4 @@ function mostrarFraseDoDia() {
 
     console.log("Sua frase do dia " + dia_hoje + ": " + frase_escolhida);
     return frase_escolhida;
-}
+}*/
