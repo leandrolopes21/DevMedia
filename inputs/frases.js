@@ -30,31 +30,12 @@ let frases = [
     "A gratidão transforma o que temos em suficiente", // Posição 28 - dia 29
     "A cada desafio, surge uma oportunidade de crescimento", // Posição 29 - dia 30
     "O sucesso é a soma de pequenos esforços repetidos dia após dia" // Posição 30 - dia 31
-];
+]
 
 let data_atual = new Date();
 let dia_hoje = data_atual.getDate();
+dia_hoje--;
 
-let frase_escolhida = frases[dia_hoje - 1];
+let frase_escolhida = frases[dia_hoje];
 
-console.log("Sua frase do dia " + dia_hoje + ": " + frase_escolhida);
-
-
-// Função que retorna e (quando possível) atualiza a frase do dia na página
-/*
-function mostrarFraseDoDia() {
-    // Calcula índice correto: dia 1 => índice 0
-    const idx = Math.max(0, Math.min(frases.length - 1, dia_hoje - 1));
-    const frase_escolhida = frases[idx] || 'Nenhuma frase disponível';
-
-    // Se estiver em um ambiente com DOM (navegador), atualiza os elementos
-    if (typeof document !== 'undefined') {
-        const fraseEl = document.getElementById('frase');
-        const infoEl = document.getElementById('info');
-        if (fraseEl) fraseEl.textContent = frase_escolhida;
-        if (infoEl) infoEl.textContent = `Dia ${dia_hoje} — posição ${idx}`;
-    }
-
-    console.log("Sua frase do dia " + dia_hoje + ": " + frase_escolhida);
-    return frase_escolhida;
-}*/
+console.log(frase_escolhida);
