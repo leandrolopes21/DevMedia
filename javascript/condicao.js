@@ -1,7 +1,8 @@
-var dia_semana = 5;
+// Estruturas condicionais
 
-if (dia_semana == 0 || dia_semana == 6) {
-    console.log("Final de semana");
-} else {
-    console.log("Dia útil");
-}
+// Exemplo de estrutura condicional simplificada, no modo if ternário
+let statu = false;
+let resultado = statu ? "Aprovado" : "Reprovado";
+
+console.log(resultado);
+
