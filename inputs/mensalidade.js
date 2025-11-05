@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import mensal from 'readline-sync';
 
 //let valor_mensalidade = 100;
@@ -26,6 +27,13 @@ while (contador <= total_dias) {
 }
 
 /*
+=======
+let valor_mensalidade = 100;
+let taxa_multa = 0.02; // 2%
+let total_dias = 10;
+let contador = 1;
+
+>>>>>>> Stashed changes
 do {
 
     let dias_atraso = contador;
@@ -35,5 +43,9 @@ do {
     console.log("Dia(s) de atraso: " + dias_atraso + " - mensalidade atualizada: R$" + novo_valor_mensalidade + ",00");
 
     contador++;
+<<<<<<< Updated upstream
 } while (contador < total_dias);
  */
+=======
+} while (contador < total_dias);
+>>>>>>> Stashed changes
