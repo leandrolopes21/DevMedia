@@ -41,17 +41,28 @@ for (let i = 0; i < salarioMinimo.length; i++) {
 
         let ano = salarioMinimo[i].ano;
         let salario = salarioMinimo[i].salario;
+        let salarioFormatado = salario.toFixed(2).replace(".", ",");
         console.log("\nAno: ".padEnd(30, ".") + ano);
-        console.log("Salário Mínimo: ".padEnd(30, ".") + "R$ " + salario + ",00");
+        console.log("Salário Mínimo: ".padEnd(29, ".") + "R$ " + salarioFormatado);
 
     } else if (numEscolhido == 2) {
 
         let ano = dadosIpca[i].ano;
         let ipca = dadosIpca[i].ipca;
+        let ipcaFormatado = ipca.toFixed(2).replace(".", ",");
         console.log("\nAno: ".padEnd(30, ".") + ano);
-        console.log("Índice IPCA: ".padEnd(30, ".") + ipca.toFixed(2) + "%");
+        console.log("Índice IPCA: ".padEnd(29, ".") + ipcaFormatado + "%");
         
-    } else {
+    } else if (numEscolhido ==3) {
+
+        let ano = salarioMinimo[i].ano;
+        let salario = salarioMinimo[i].salario;
+        let ipca = dadosIpca[i].ipca;
+
+    }
+    
+    
+    else {
 
         console.log("\nOpção inválida. Por favor, escolha 1, 2 ou 3.\n");
         break;
