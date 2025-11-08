@@ -42,86 +42,45 @@ for (let i = 0; i < salarioMinimo.length; i++) {
         let ano = salarioMinimo[i].ano;
         let salario = salarioMinimo[i].salario;
         let salarioFormatado = salario.toFixed(2).replace(".", ",");
-        console.log("\nAno: ".padEnd(30, ".") + ano);
-        console.log("Salário Mínimo: ".padEnd(29, ".") + "R$ " + salarioFormatado);
+
+        console.log("\nAno: ".padEnd(40, ".") + ano);
+        console.log("Salário Mínimo: ".padEnd(39, ".") + "R$ " + salarioFormatado);
 
     } else if (numEscolhido == 2) {
 
         let ano = dadosIpca[i].ano;
         let ipca = dadosIpca[i].ipca;
         let ipcaFormatado = ipca.toFixed(2).replace(".", ",");
-        console.log("\nAno: ".padEnd(30, ".") + ano);
-        console.log("Índice IPCA: ".padEnd(29, ".") + ipcaFormatado + "%");
-        
-    } else if (numEscolhido ==3) {
+
+        console.log("\nAno: ".padEnd(40, ".") + ano);
+        console.log("Índice IPCA: ".padEnd(39, ".") + ipcaFormatado + "%");
+
+    } else if (numEscolhido == 3) {
 
         let ano = salarioMinimo[i].ano;
         let salario = salarioMinimo[i].salario;
         let ipca = dadosIpca[i].ipca;
+        let salarioFormatado = salario.toFixed(2).replace(".", ",");
+        let ipcaFormatado = ipca.toFixed(2).replace(".", ",");
 
-    }
-    
-    
-    else {
+        if (i > 0) {
 
-        console.log("\nOpção inválida. Por favor, escolha 1, 2 ou 3.\n");
-        break;
+            let salarioAnterior = salarioMinimo[i - 1].salario;
+            let diferenca = salario - salarioAnterior;
+            let crescimentoSalarial = (diferenca / salarioAnterior) * 100;
+
+            console.log("\nAno: ".padEnd(40, ".") + ano);
+            console.log("Salário Mínimo: ".padEnd(39, ".") + "R$ " + salarioFormatado);
+            console.log("Crescimento Salarial a.a: ".padEnd(39, ".") + crescimentoSalarial.toFixed(2) + "%");
+            console.log("Índice IPCA: ".padEnd(39, ".") + ipcaFormatado + "%");
+
+        } else {
+
+            console.log("\nAno: ".padEnd(40, ".") + ano);
+            console.log("Salário Mínimo: ".padEnd(39, ".") + "R$ " + salarioFormatado);
+            console.log("Crescimento Salarial: ".padEnd(39, ".") + "-");
+            console.log("Índice IPCA: ".padEnd(39, ".") + ipcaFormatado + "%");
+
+        }        
     }
 }
-
-// console.log("\nVocê escolheu a opção " + numEscolhido + ".\n");
-
-/*
-for (let dado of dados) {
-
-    let ano =+ dado.ano;
-    let salario =+ dado.salarioMinimo;
-    let ipca =+ dado.ipca;
-
-    let contador = 0;
-
-    // console.log("\nAno: ".padEnd(30, ".") + ano);
-    // console.log("Salário Mínimo: ".padEnd(30, ".") + "R$ " + salario + ",00");
-    // console.log("Índice IPCA: ".padEnd(30, ".") + ipca.toFixed(2) + "%");
-
-    
-    
-
-    if (numEscolhido == 1) {
-
-        while (contador <= dados.length) {
-            
-            console.log("\nAno: ".padEnd(30, ".") + ano);
-            console.log("Salário Mínimo: ".padEnd(30, ".") + "R$ " + salario + ",00\n");
-            contador++;
-        }        
-
-    } else if (numEscolhido == 2) {
-
-        while (contador <= dados.length) {
-        
-            console.log("\nAno: ".padEnd(30, ".") + ano);
-            console.log("Índice IPCA: ".padEnd(30, ".") + ipca.toFixed(2) + "%\n");
-            contador++;
-
-        }
-
-    } else if (numEscolhido == 3) {
-
-        while (contador <= dados.length) {
-
-            let aumentoPercentual = ((salario - 510) / 510) * 100;
-            console.log("\nAno: " + ano + " - Aumento Percentual: " + aumentoPercentual.toFixed(2) + "% - Índice IPCA: " + ipca.toFixed(2) + "%\n");
-            contador++;
-            
-        }        
-
-    } else {
-        
-        console.log("\nOpção inválida. Por favor, escolha 1, 2 ou 3.\n");
-
-    }
-
-}
-*/
-

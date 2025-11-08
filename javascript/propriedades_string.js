@@ -1,11 +1,7 @@
 // Métodos nativos em Javascript para trabalhar com string
 
-<<<<<<< Updated upstream
 // length - obtém o tamanho da string - length é propriedade, não método
 
-=======
-// length - obtém o tamanho da string
->>>>>>> Stashed changes
 // toLowerCase() - altera para letras minúsculas em string
 // toUpperCase() - altera para letras maiússculas em string
 // trim() - remove espaços em branco no início e fim de uma string
