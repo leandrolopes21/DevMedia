@@ -1,2 +1,13 @@
 const hoje = new Date();
-console.log(hoje);
+
+// Imprimindo uma string com a data e a hora local
+console.log(hoje.toLocaleString());
+
+// Imprimindo uma string com a data armazenada
+console.log(hoje.toString());
+
+// Impimindo uma string com a data universal (UTC)
+console.log(hoje.toUTCString());
+
+// Imprimindo timestamp
+console.log(hoje.valueOf());
