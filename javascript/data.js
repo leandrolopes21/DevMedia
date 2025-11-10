@@ -12,6 +12,9 @@ console.log(hoje.toUTCString());
 // Imprimindo timestamp
 console.log(hoje.valueOf());
 
+/* Todos os métodos acima retornam valores do tipo number */
+/*======================================================*/
+
 const dataAtual = new Date();
 
 // Métodos para objeto data (Getters)
