@@ -1,7 +1,11 @@
-let x = 6;
+for (num = 0; num <= 100; num++) {
 
-if (x % 2 == 0) {
-    console.log("X é par!");
-} else {
-    console.log("X é ímpar!");
+    if (num % 2 == 0) {
+
+        console.log(`Número ${num} é par!`);
+
+    } else {
+
+        console.log(`Número ${num} é ímpar!`);
+    }
 }
