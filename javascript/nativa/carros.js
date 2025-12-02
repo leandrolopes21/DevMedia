@@ -10,7 +10,7 @@ const carros = [
  * Formata as informações de um objeto de carro em uma única string.
  * @param {object} carro - O objeto de carro com as propriedades marca, modelo e anoFabricacao.
  * @returns {string} Uma string formatada com os detalhes do carro.
- */
+ 
 function retornaCarro(carro) {
     return carro.marca + ' ' + carro.modelo + ' ano: ' + carro.anoFabricacao;
 }
@@ -22,3 +22,10 @@ const novosCarros = carros.map(retornaCarro);
 
 // Imprime o array 'novosCarros' no console.
 console.log(novosCarros);
+*/
+
+
+// Exemplo de filter utilizando arrow function
+const carrosFiat = carros.filter((carro) => carro.marca == 'Fiat');
+
+console.log(carrosFiat);
