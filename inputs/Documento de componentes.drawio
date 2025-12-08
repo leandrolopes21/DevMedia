@@ -1,0 +1,96 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Página-1" id="z4s9Tygt8Esyf_oTW6Qk">
+    <mxGraphModel dx="1226" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HZgpM8wTLAhNsmXqO8Vg-7" target="HZgpM8wTLAhNsmXqO8Vg-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="720" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="110" y="890" />
+              <mxPoint x="110" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-1" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Coleção de dados&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Responsável por armazenar as 30 perguntas da aplicação&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="50" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Função selecionarQuestoesAleatorias&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;Busca e retorna 10 perguntas de forma aleatoria na coleção de dados&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="200" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="HZgpM8wTLAhNsmXqO8Vg-3" target="HZgpM8wTLAhNsmXqO8Vg-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="380" />
+              <mxPoint x="540" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Função exibirPergunta&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;Exibe a pergunta.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;Recebe, armazena e retorna a resposta do usuário&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="350" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HZgpM8wTLAhNsmXqO8Vg-4" target="HZgpM8wTLAhNsmXqO8Vg-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="260" as="targetPoint" />
+            <mxPoint x="510" y="569.9999999999998" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="590" y="570" />
+              <mxPoint x="590" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.583;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="HZgpM8wTLAhNsmXqO8Vg-4" target="HZgpM8wTLAhNsmXqO8Vg-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="540" />
+              <mxPoint x="540" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Função validarRespostaDoUsuario&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;Verifica se a resposta do usuário está correta&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="510" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Função exibirResultado&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;Exibe o resultado do quiz com: nome do jogador, pontuação final e mensagem de encerramento (com base na pontuação final).&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="670" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.448;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="HZgpM8wTLAhNsmXqO8Vg-7" target="HZgpM8wTLAhNsmXqO8Vg-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="570" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="890" />
+              <mxPoint x="90" y="564" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HZgpM8wTLAhNsmXqO8Vg-7" target="HZgpM8wTLAhNsmXqO8Vg-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="60" y="890" />
+              <mxPoint x="60" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="HZgpM8wTLAhNsmXqO8Vg-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="230" as="targetPoint" />
+            <mxPoint x="169.97" y="890" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="30" y="890" />
+              <mxPoint x="30" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-7" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Função iniciarQuiz&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Responsável por executar o jogo&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="830" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HZgpM8wTLAhNsmXqO8Vg-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.998;entryY=0.403;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="HZgpM8wTLAhNsmXqO8Vg-2" target="HZgpM8wTLAhNsmXqO8Vg-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
