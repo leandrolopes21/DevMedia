@@ -33,6 +33,41 @@ const questoes = [
   { id: 30, pergunta: 'Em que ano o homem pisou na Lua pela primeira vez?', resposta: '1969' }
 ];
 
+/*
+console.log('\n---- QUIZ DE FATOS HISTÓRICOS ----\n');
+console.log('Seja bem vindo jogador(a)!');
+let nomeUsuario = quiz.question('Qual o seu nome? ');
+*/
+// console.log('Bem vindo ' + nomeUsuario + '! Vamos jogar?');
+
+// Sempre que for necessário embaralhar os itens de um array, utilize a seguinte sintaxe:
+// array.sort(() => Math.random() - 0.5)
+
+// const questoesEmbaralhadas = questoes.sort(() => Math.random() - 0.5); // Criar aleatoriedade no array usando Math.random() dentro do sort()
+// console.log(questoesEmbaralhadas);
+
+// Sempre que for necessários copiar itens de um array, utilize a seguinte sintaxe:
+// array.slice(indice_inicio, indice_fim)
+
+// const questoesSelecionadas = questoesEmbaralhadas.slice(0, 4); // Criar cópia do novo array utilizando método slice()
+// console.log(questoesSelecionadas);
+
+// Exibindo perguntas com o uso do array.forEach()
+/*
+questoesSelecionadas.forEach((pergunta, index) => {
+  console.log(`${index + 1}: ${pergunta.pergunta}`);
+});
+*/
+
+// Exibindo perguntas utilizando o laço de repetição for()
+// Com o laço for() não é necessário utilizar o método slice() para selecionar as perguntas
+
+/*
+for (let i = 0; i < 10; i++) {
+  console.log(`${i + 1}: ${questoesEmbaralhadas[i].pergunta}`);
+}
+*/
+
 // ************** Utilizando function ***************
 
 function selecionarQuestoesAleatorias(questoes, quantidadeQuestoes) {
@@ -95,7 +130,7 @@ function iniciarQuiz() {
   exibirResultado(pontuacaoFinal, nomeJogador);
 }
 
-iniciarQuiz(); // Inicia o quiz
+iniciarQuiz();
 
 
 /* Mensagem de encerramento */
