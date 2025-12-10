@@ -64,14 +64,15 @@ function exibirResultado(pontuacaoFinal, nomeJogador) {
 
     console.log(`\nNome do jogador: ${nomeJogador}`);
     console.log(`Pontuação: ${pontuacaoFinal} pontos`);
-    console.log(`${mensagem}`);
+    console.log(`${mensagem}\n`);
 }
 
 function iniciarQuiz() {
 
     console.log(`\n***** QUIZ DE FATOS HISTÓRICOS *****`);
-    const nomeJogador = dados.question(`Digite seu nome: `);
+    console.log(`Seja bem vindo jogador(a)!`);
 
+    const nomeJogador = dados.question(`Digite seu nome: `);
     const quantidadeQuestoes = 10;
 
     const questoesSelecionadas = selecionarQuestoesAleatorias(questoes, quantidadeQuestoes);
@@ -88,9 +89,9 @@ function iniciarQuiz() {
         } else {
             console.log(`Resposta incorreta!`);
         }
-
-        exibirResultado(pontuacaoFinal, nomeJogador);
     });
+
+    exibirResultado(pontuacaoFinal, nomeJogador);
 }
 
 iniciarQuiz();

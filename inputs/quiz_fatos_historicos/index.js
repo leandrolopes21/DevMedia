@@ -73,7 +73,7 @@ function iniciarQuiz() {
   console.log('\n---- QUIZ DE FATOS HISTÓRICOS ----\n');
   console.log('Seja bem vindo jogador(a)!');
 
-  const nomeJogador = quiz.question('Digite o seu nome? ');
+  const nomeJogador = quiz.question('Digite o seu nome: ');
   const quantidadeQuestoes = 10;
 
   const questoesSelecionadas = selecionarQuestoesAleatorias(questoes, quantidadeQuestoes);
