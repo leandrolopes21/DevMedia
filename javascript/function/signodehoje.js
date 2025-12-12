@@ -20,6 +20,7 @@ const colecao_signos = [
 ];
 
 const obterSigno = (data) => {
+    
     let ano = data.getFullYear();
 
     for (const signo of colecao_signos) {
