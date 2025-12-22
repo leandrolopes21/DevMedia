@@ -1,11 +1,22 @@
-function calcularIMC(peso, altura) {
+import entradaDados from 'readline-sync';
+import {calcularIMC, classificacaoIMC, validaPeso, validaAltura} from './funcao/funcoes.js';
 
-    let imc = peso / (altura * altura);
+let peso = entradaDados.question('\nDigite seu peso: ');
+let altura = entradaDados.question('Digite sua altura: ');
 
-    return imc.toFixed(2);
+let verificaPesoValido = validaPeso(peso);
+let verificaAlturaValida = validaAltura(altura);
+
+if (verificaPesoValido && verificaAlturaValida) {
+
+    let resultadoIMC = calcularIMC(peso, altura);
+    let statusIMC = classificacaoIMC(resultadoIMC);
+
+    console.log(`\nSeu IMC é ${resultadoIMC}`);
+    console.log(`${statusIMC}\n`);
+
+} else {
+
+    console.log(`\nOs valores de peso e altura devem ser maiores que zero!\n`);
 }
 
-let peso = 75;
-let altura = 1.71;
-
-console.log(calcularIMC(peso, altura));
