@@ -1,11 +1,10 @@
-function calcularIMC(peso, altura) {
-
-    let imc = peso / (altura * altura);
+const calcularIMC = (peso, altura) => {
     
-   return imc.toFixed(1);
-}
+    let imc = peso / (altura * altura);
+    return imc.toFixed(1);
+};
 
-function classificacaoIMC(imc) {
+const classificacaoIMC = (imc) => {
 
     let classe;
     let grau;
@@ -34,6 +33,4 @@ function classificacaoIMC(imc) {
     let respostaIMC = `Classificação: ${classe} -- Grau de obesidade: ${grau}`;
 
     return respostaIMC;
-}
-
-export {calcularIMC, classificacaoIMC};
+};
