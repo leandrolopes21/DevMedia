@@ -1,6 +1,7 @@
-/*
+/* Aplicação utiliza função tradicional
 import entradaDados from 'readline-sync';
-import {calcularIMC, classificacaoIMC} from './funcao/calculadoraIMC.js';
+import calcularIMC from './funcao/calculadoraIMC.js';
+import classificacaoIMC from './funcao/classificarIMC.js';
 import { validaPeso, validaAltura } from './funcao/validaPesoAltura.js';
 
 let peso = entradaDados.question('\nDigite seu peso: ');
@@ -24,6 +25,7 @@ if (verificaPesoValido && verificaAlturaValida) {
 */
 
 
+
 // Aplicação abaixo utiliza arrow function
 import entradaDados from 'readline-sync';
 import {validaPeso, validaAltura} from './funcao/validaPesoAltura.js';
@@ -39,8 +41,13 @@ if (verificaPesoValido && verificaAlturaValida) {
     const calcularIMC = (peso, altura) => {
 
         let imc = peso / (altura * altura);
-        return imc.toFixed(1);    
-    
+        let imcFormatado = formataIMC(imc);
+        return imcFormatado;    
+    };
+
+    const formataIMC = (imc) => {
+         
+       return imc.toFixed(2)
     };
 
     const classificacaoIMC = (imc) => {
