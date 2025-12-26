@@ -9,4 +9,7 @@ const feriadosNacionais = [
     {nome: 'Natal',                        data: '12/25'},
 ];
 
+// Datas estão no formato americano (mm/dd)
+// O JavaScript utiliza o formato americano quando necessário fazer cálculos e comparações que envolvem datas
+
 export default feriadosNacionais;
