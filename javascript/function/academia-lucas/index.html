@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia do Lucas</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Firebase SDK (comentado para uso futuro com hospedagem na nuvem)
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        window.db = db;
+        window.collection = collection;
+        window.addDoc = addDoc;
+        window.getDocs = getDocs;
+    </script>
+    -->
+</head>
+<body>
+
+    <main id="principal" class="principal">
+
+        <header id="secao-cabecalho" class="secao-cabecalho">
+            <div id="conteiner-cabecalho" class="conteiner-cabecalho">
+                <h1>Academia do Lucas</h1>
+            </div>
+        </header>
+
+        <section id="secao-conteudo" class="secao-conteudo">
+
+            <div id="conteiner-texto" class="conteiner-texto">
+                <h2>Treinos da Semana</h2>
+            </div>
+
+            <div id="conteiner-botoes" class="conteiner-botoes">
+                <button id="btnTreino" class="btnTreino">Treino do dia</button>
+                <button id="btnFeito" class="btnFeito">Feito</button>
+                <button id="btnHistorico" class="btnHistorico">Histórico</button>
+                <button id="btnLimparHistorico" class="btnLimparHistorico">Limpar Histórico</button>
+            </div>
+
+            <div id="conteiner-conteudo" class="conteiner-conteudo">
+
+                <div id="conteiner-conteudo-data-treino" class="conteiner-conteudo-data-treino">
+                    <p id="data-atual" class="data-atual">
+                        <!-- Exibe o dia atual da semana -->
+                    </p>
+                    <p id="exibe-treino" class="exibe-treino">
+                        <!-- Exibe o treino correspondente ao dia -->
+                    </p>
+                    <p id="exibe-historico" class="exibe-historico">
+                        <!-- Exibe o histórico de treinos salvos -->
+                    </p>
+                    <p id="exibe-historico-feito" class="exibe-historico-feito">
+                        <!-- Exibe o histórico de treinos salvos -->
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="funcoes/funcoes.js"></script>
+    
+</body>
+</html>
