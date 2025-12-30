@@ -89,9 +89,9 @@ function limparTelaHistorico() {
     exibeHistoricoFeito.innerHTML = '';
 }
 
-function marcarComoFeito() {
+async function marcarComoFeito() {
     // Salva o treino atual no histórico
-    salvarHistorico(retornaDiaDaSemana(), treinosLucas());
+    await salvarHistorico(retornaDiaDaSemana(), treinosLucas());
 
     // Limpa a exibição
     limpar();
@@ -100,6 +100,8 @@ function marcarComoFeito() {
     botaoFeito.style.backgroundColor = '#474747';
 }
 
+/*
+// Versão local
 function salvarHistorico(dia, treino) {
     let historico = JSON.parse(localStorage.getItem('historicoTreinos')) || [];
     let dataAtual = new Date().toLocaleDateString('pt-BR');
@@ -115,24 +117,21 @@ function salvarHistorico(dia, treino) {
         alert('Treino de hoje já foi salvo!');
     }
 }
-
-/*
-Versão para Firebase (descomente e configure se quiser usar na nuvem):
-function salvarHistorico(dia, treino) {
-    const historicoRef = window.collection(window.db, 'historicoTreinos');
-    const dataAtual = new Date().toLocaleDateString('pt-BR');
-    window.addDoc(historicoRef, {
-        data: dataAtual,
-        dia: dia,
-        treino: treino
-    }).then(() => {
-        console.log('Treino salvo no histórico!');
-    }).catch((error) => {
-        console.error('Erro ao salvar:', error);
-    });
-}
 */
 
+// Versão para Supabase (uso na nuvem):
+async function salvarHistorico(dia, treino) {
+    const dataAtual = new Date().toLocaleDateString('pt-BR');
+    const { error } = await window.supabase.from('historicoTreinos').insert([{ data: dataAtual, dia, treino }]);
+    if (error) {
+        alert('Erro ao salvar: ' + error.message);
+    } else {
+        alert('Treino salvo no histórico!');
+    }
+}
+
+/*
+// Versão local
 function exibirHistorico() {
     let historico = JSON.parse(localStorage.getItem('historicoTreinos')) || [];
     let exibeHistorico = document.getElementById('exibe-historico');
@@ -148,37 +147,38 @@ function exibirHistorico() {
     exibeHistorico.innerHTML = 'Histórico de Treinos:';
     exibeHistoricoFeito.innerHTML = historico.map(item => `${item.data} (${item.dia}): ${item.treino} - OK!`).join('<br>');
 }
+*/
 
-function limparHistorico() {
-
+async function limparHistorico() {
     if (confirm('Tem certeza que deseja limpar todo o histórico de treinos?')) {
-        localStorage.removeItem('historicoTreinos');
-        alert('Histórico limpo!');
-        limparTelaHistorico(); // Limpa a tela também
-        botaoLimparHistorico.disabled = true;
+        const { error } = await window.supabase.from('historicoTreinos').delete().neq('id', 0); // Deleta todos os registros
+        if (error) {
+            alert('Erro ao limpar histórico: ' + error.message);
+        } else {
+            alert('Histórico limpo!');
+            limparTelaHistorico(); // Limpa a tela também
+            botaoLimparHistorico.disabled = true;
+        }
     }
 }
 
-/*
-Versão para Firebase (descomente e configure se quiser usar na nuvem):
+// Versão para Supabase (uso na nuvem):
 async function exibirHistorico() {
-    const historicoRef = window.collection(window.db, 'historicoTreinos');
-    const querySnapshot = await window.getDocs(historicoRef);
-    let historico = [];
-    querySnapshot.forEach((doc) => {
-        historico.push(doc.data());
-    });
-
-    let exibeData = document.getElementById('data-atual');
-    let exibeTreino = document.getElementById('exibe-treino');
-
-    if (historico.length === 0) {
-        exibeData.innerHTML = 'Histórico vazio';
-        exibeTreino.innerHTML = 'Nenhum treino marcado como feito ainda.';
+    const { data: historico, error } = await window.supabase.from('historicoTreinos').select('*');
+    if (error) {
+        alert('Erro ao carregar histórico: ' + error.message);
         return;
     }
 
-    exibeData.innerHTML = 'Histórico de Treinos:';
-    exibeTreino.innerHTML = historico.map(item => `${item.data} (${item.dia}): ${item.treino}`).join('<br>');
+    let exibeHistorico = document.getElementById('exibe-historico');
+    let exibeHistoricoFeito = document.getElementById('exibe-historico-feito');
+
+    if (!historico || historico.length === 0) {
+        exibeHistorico.innerHTML = 'Histórico vazio';
+        exibeHistoricoFeito.innerHTML = 'Nenhum treino marcado como feito ainda.';
+        return;
+    }
+
+    exibeHistorico.innerHTML = 'Histórico de Treinos:';
+    exibeHistoricoFeito.innerHTML = historico.map(item => `${item.data} (${item.dia}): ${item.treino} - OK!`).join('<br>');
 }
-*/
