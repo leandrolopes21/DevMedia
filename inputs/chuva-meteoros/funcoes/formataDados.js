@@ -1,7 +1,7 @@
-const formataDados = (chuva) => {
+const defineDados = (chuva) => {
 
-    let nomeDaChuva = chuva.nome.padEnd(27, ' ');
-    let classificacao = chuva.intensidade.padEnd(11, ' ');
+    let nomeDaChuva = chuva.nome.padEnd(20, ' ');
+    let classificacao = chuva.intensidade;
     let hemisferio = chuva.declinacao;
     let resultado;
     let resultadoHemisferio;
@@ -49,24 +49,4 @@ const formataDados = (chuva) => {
     return dados;
 }
 
-/*
-const formataPeriodo = (chuva) => {
-
-    const dataApp = new Date();
-    const anoAtual = dataApp.getFullYear();
-    const mesAtual = dataApp.getMonth();
-    const diaAtual = dataApp.getDate();
-
-    const [mesInicio, diaInicio] = chuva.inicio.split('/').map(Number);
-    const [mesFim, diaFim] = chuva.fim.split('/').map(Number);
-
-    const dataInicio = new Date(anoAtual, mesInicio - 1, diaInicio);
-    const dataFim = new Date(anoAtual, mesFim - 1, diaFim);
-
-    const apresentaData = `${dataInicio.toLocaleDateString('pt-BR', {day: '2-digit', month: '2-digit'})} à ${dataFim.toLocaleDateString('pt-BR', {day: '2-digit', month: '2-digit'})}`;
-
-    return apresentaData;
-}
-*/
-
-export default formataDados;
+export default defineDados;
