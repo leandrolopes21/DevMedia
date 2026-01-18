@@ -1,0 +1,12 @@
+.secao_contatos {
+  width: 100%;
+  padding: 100px 20px;
+  gap: 40px;
+}
+
+.contatos_card {
+  max-width: 350px;
+  padding: 20px;
+}
+
+/* imagens e textos no containers devem ser alinhados a esquerda */

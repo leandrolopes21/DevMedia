@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Logo from "../../../public/Logo.png";
+import Logo from "../../../public/logo.png";
 import estilos from "./Topo.module.css";
+import Link from "next/link";
 
 export default function Topo() {
   return (
@@ -10,9 +11,9 @@ export default function Topo() {
           <Image className={estilos.img_logo} src={Logo} alt="logotipo"/>
         </div>
         <div className={estilos.links}>
-          <a>Produtos</a>
-          <a>Sobre</a>
-          <a>Contato</a>
+          <Link href="#secao_produtos">Produtos</Link>
+          <Link href="#secao_sobre">Sobre</Link>
+          <Link href="#secao_contatos">Contato</Link>
         </div>
       </header>
     </div>

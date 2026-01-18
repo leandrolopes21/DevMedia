@@ -3,6 +3,9 @@ import estilos from "@/styles/Home.module.css";
 import Topo from "@/componentes/Topo";
 import Rodape from "@/componentes/Rodape";
 import Secao_capa from "@/componentes/Secao_capa";
+import Secao_produtos from "@/componentes/Secao_produtos";
+import Secao_sobre from "@/componentes/Secao_sobre";
+import Secao_contatos from "@/componentes/Secao_contatos";
 
 export default function Home() {
   return (
@@ -15,9 +18,14 @@ export default function Home() {
       </Head>
 
       <Topo/>
+
       <main className={estilos.container_main}>
         <Secao_capa/>
+        <Secao_produtos/>
+        <Secao_sobre/>
+        <Secao_contatos/>
       </main>
+      
       <Rodape/>
       
     </div>

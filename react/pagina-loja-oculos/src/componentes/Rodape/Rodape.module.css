@@ -1,12 +1,3 @@
 .rodape {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 5vh;
   padding: 20px;
-  background-color: rgb(49, 41, 41);
-  color: white;
 }
