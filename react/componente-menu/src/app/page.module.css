@@ -1,0 +1,19 @@
+.topo {
+  position: fixed;
+  padding: 0 20px;
+  width: 100%;
+  background-color: #f9db79;
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+
+  z-index: 1;
+}
+
+.botao {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
