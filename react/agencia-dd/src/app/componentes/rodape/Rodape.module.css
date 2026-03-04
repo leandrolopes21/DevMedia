@@ -1,0 +1,73 @@
+.light_mode_rodape {
+    background-color: #ffffff;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark_mode_rodape {
+    background-color: #252525;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragrafo {
+    max-width: 600px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #8a8fa3;
+    text-align: center;
+}
+
+.dark_mode_rodape .assinatura {
+    border-top: 1px solid #ffffff0d;
+}
+
+.container_informacoes {
+    padding: 100px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.container_informacoes div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.container_informacoes div:nth-child(2) {
+    width: 100%;
+    max-width: 375px;
+    padding: 0 5px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_informacoes div:nth-child(2) img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.assinatura {
+    width: 100%;
+    font-weight: 600;
+    color: #8a8fa3;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.assinatura span {
+    color: #fcc520;
+}

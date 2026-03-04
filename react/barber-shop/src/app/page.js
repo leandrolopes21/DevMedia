@@ -1,9 +1,9 @@
 'use client';
-import estilos from "./page.module.css";
 import { useState } from "react";
 import { BsSun, BsMoon } from "react-icons/bs";
 import Image from "next/image";
-import Logo from "../../public/barbearia.png";
+import Logo from "../assets/barbearia.png";
+import estilos from "./page.module.css";
 
 export default function Home() {
 
