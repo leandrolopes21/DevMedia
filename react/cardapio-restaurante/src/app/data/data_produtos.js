@@ -29,6 +29,8 @@ import saladaWaldorf from "../../../public/salada-waldorf.jpg";
 import saladaGrega from "../../../public/salada-grega.jpg";
 import saladaNicoise from "../../../public/salada-nicoise.jpg";
 
+// Este arquivo funciona como um banco de dados estático para a aplicação.
+// Ele exporta um array de objetos, onde cada objeto representa um produto do cardápio.
 export const produtos = [
   {
     id: 1,

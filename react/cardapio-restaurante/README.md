@@ -1,17 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cardápio de Restaurante
 
-## Getting Started
+Este é um projeto desenvolvido com Next.js e React, simulando um cardápio digital de restaurante.
 
-First, run the development server:
+## 📋 Sobre o Projeto
+
+O objetivo deste projeto é criar uma interface interativa para visualização de pratos de um restaurante. O usuário pode filtrar os itens por categorias ou utilizar a barra de pesquisa para encontrar pratos específicos.
+
+## 🚀 Funcionalidades
+
+*   **Filtragem por Categoria:** Navegue entre diferentes tipos de pratos como Entradas, Massas, Carnes, Bebidas, Saladas e Sobremesas.
+*   **Busca Textual:** Pesquise pratos pelo nome ou descrição através do campo de busca.
+*   **Visualização de Detalhes:** Cards informativos com imagem, nome, categoria, descrição e preço do prato.
+
+## 🛠️ Tecnologias Utilizadas
+
+*   **Next.js:** Framework React para produção.
+*   **React:** Biblioteca Javascript para construção de interfaces.
+*   **CSS Modules:** Para estilização escopada dos componentes.
+
+## 📦 Como rodar o projeto
+
+Primeiro, instale as dependências e rode o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
