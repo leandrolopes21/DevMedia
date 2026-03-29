@@ -1,0 +1,252 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOPO */
+.container header {
+  display: flex;
+  align-items: center;
+  min-height: 5vh;
+  background-color: #20232a;
+  color: #61dafb;
+  padding: 30px 20px;
+}
+
+.container header p {
+  font-weight: bold;
+}
+
+/* CONTEÚDO */
+.conteudo_principal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* SEÇÃO TÍTULO */
+.secao_titulo {
+  min-height: 30vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-color: #282c34;
+}
+
+.secao_titulo h1 {
+  font-size: 36px;
+  color: #61dafb;
+}
+
+.secao_titulo p{
+  font-size: 24px;
+  color: #fff;
+}
+
+.secao_titulo a{
+  text-decoration: none;
+  background-color: #61dafb;
+  color: #000;
+  font-weight: 600;
+  padding: 15px;
+}
+
+/* SEÇÃO REQUISITOS */
+.secao_requisitos {
+  min-height: 50vh;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.secao_requisitos p {
+  margin-bottom: 10px;
+}
+
+.container_cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.container_cards div {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #282c34;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(145, 145, 145);
+}
+
+.container_cards div h3{
+  color: #edc854;
+}
+
+.container_cards div p {
+  color: #fff;
+}
+
+/* RODAPÉ */
+.container footer {
+  min-height: 5vh;
+  padding: 30px;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f3f6;
+}
+
+/*
+.page {
+  --background: #fafafa;
+  --foreground: #fff;
+
+  --text-primary: #000;
+  --text-secondary: #666;
+
+  --button-primary-hover: #383838;
+  --button-secondary-hover: #f2f2f2;
+  --button-secondary-border: #ebebeb;
+
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-geist-sans);
+  background-color: var(--background);
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 800px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: var(--foreground);
+  padding: 120px 60px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 24px;
+}
+
+.intro h1 {
+  max-width: 320px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -2.4px;
+  text-wrap: balance;
+  color: var(--text-primary);
+}
+
+.intro p {
+  max-width: 440px;
+  font-size: 18px;
+  line-height: 32px;
+  text-wrap: balance;
+  color: var(--text-secondary);
+}
+
+.intro a {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.ctas {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 440px;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.ctas a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 128px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: 500;
+}
+
+a.primary {
+  background: var(--text-primary);
+  color: var(--background);
+  gap: 8px;
+}
+
+a.secondary {
+  border-color: var(--button-secondary-border);
+}
+*/
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    background: var(--button-primary-hover);
+    border-color: transparent;
+  }
+
+  a.secondary:hover {
+    background: var(--button-secondary-hover);
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 48px 24px;
+  }
+
+  .intro {
+    gap: 16px;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1.92px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
+  }
+
+  .page {
+    --background: #000;
+    --foreground: #000;
+
+    --text-primary: #ededed;
+    --text-secondary: #999;
+
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+    --button-secondary-border: #1a1a1a;
+  }
+}

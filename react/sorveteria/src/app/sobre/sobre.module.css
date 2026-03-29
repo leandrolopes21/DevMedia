@@ -1,0 +1,112 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.secao_principal {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(./assets/banner-sobre.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secao_principal div {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secao_principal div h1 {
+  font-size: 100px;
+  color: #fff;
+  text-shadow: 3px 5px 2px #474747;
+  text-align: center;
+}
+
+.secao_secundaria {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto {
+  width: 100%;
+  max-width: 1024px;
+  padding: 100px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.texto h2 {
+  font-size: 32px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.texto span {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  text-align: center;
+}
+
+.texto p {
+  text-align: center;
+  line-height: 26px;
+  font-size: 16px;
+}
+
+.secao_imagens div {
+  width: 100%;
+  display: flex;
+}
+
+.img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Configuração para telas menores */
+
+@media (max-width: 1024px) {
+  .secao_principal div h1 {
+    font-size: 60px;
+  }
+
+  .secao_imagens div {
+    flex-direction: column;
+  }
+
+  .img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  .secao_principal div h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 525px){
+  .secao_principal div h1 {
+    font-size: 40px;
+  }
+}
+

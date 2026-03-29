@@ -1,0 +1,43 @@
+.topo {
+  width: 100%;
+  padding: 10px 15px;
+
+  display: flex;
+  justify-content: center;
+}
+.container_topo {
+  width: 1024px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img_logo {
+  width: auto;
+  height: 50px;
+}
+
+.links {
+  font-size: 18px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  .container_topo {
+    flex-direction: column;
+  }
+
+  .container_topo nav {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #aaadaf;
+  }
+
+}

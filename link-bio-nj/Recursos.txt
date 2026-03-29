@@ -1,0 +1,30 @@
+Recursos
+
+Fontes do projeto
+
+Ysabeau Infant e Montserrat
+
+fontes do google fonts
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ysabeau Infant', sans-serif;
+
+Paleta de cores
+
+
+    #fff
+    #ffffffcc
+    #000000
+    #000000cc
+    #0200006e
+    #ffdf00
+    #009c3b
+
+Reset da página
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ysabeau Infant', sans-serif;
+}

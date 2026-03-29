@@ -1,0 +1,19 @@
+.lista {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container_secao {
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}

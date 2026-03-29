@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário sobre Jogos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+</head>
+<body>
+
+    <header class="topo">
+        <p>Questionário</p>
+    </header>
+
+    <main class="principal">
+
+        <div class="conteiner-texto">
+            <h1>Questionário</h1>
+            <p>
+                Responda o questionário abaixo marcando as opções que correspondam as suas preferências por jogos.
+            </p>
+        </div>
+
+        <form class="formulario" action="https://www.devmedia.com.br/codigos/formularios/aula5/">
+
+            <div class="categoria conteiner-plataforma">
+
+                <h2 class="titulo-categoria">Quais plataformas de jogos você utiliza?</h2>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="plataformas[]" id="idXbox" value="Xbox">
+                    <label for="idXbox">Xbox</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="plataformas[]" id="idPlaystation" value="Playstation">
+                    <label for="idPlaystation">Playstation</label>
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="plataformas[]" id="idSwitch" value="Switch">
+                    <label for="idSwitch">Switch</label>
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="plataformas[]" id="idStadia" value="Stadia">
+                    <label for="idStadia">Stadia</label>
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="plataformas[]" id="idPc" value="PC">
+                    <label for="idPc">PC</label>
+                </div>
+
+            </div>
+
+            <div class="categoria conteiner-genero">
+
+                <h2 class="titulo-categoria">Quais seus gêneros de jogos preferidos?</h2>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="generos[]" id="idAcao" value="Acao">
+                    <label for="idAcao">Ação</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="generos[]" id="idAventura" value="Aventura">
+                    <label for="idAventura">Aventura</label>
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="generos[]" id="idPlataforma" value="Plataforma">
+                    <label for="idPlataforma">Plataforma</label>
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="generos[]" id="idRpg" value="RPG">
+                    <label for="idRpg">RPG</label>
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="generos[]" id="idTiro" value="Tiro">
+                    <label for="idTiro">Tiro</label>
+                </div>
+                
+                <div class="grupo-opcao">
+                    <input type="checkbox" name="generos[]" id="idCorrida" value="Corrida">
+                    <label for="idCorrida">Corrida</label>
+                </div>
+
+            </div>
+
+            <button type="submit">Enviar Questionário</button>
+
+        </form>
+    </main>
+
+    <footer>
+        Leandro Lopes&copy;
+    </footer>
+    
+</body>
+</html>

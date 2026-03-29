@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Frase do Dia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <h1>Frase do Dia</h1>
+      <p id="frase" class="quote">Carregando...</p>
+      <p id="info" class="info"></p>
+      <div class="actions">
+        <button id="nova">Atualizar</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- inclui o arquivo existente com o array de frases -->
+  <script src="./frases.js"></script>
+</body>
+  <script>
+    // Aguarda o carregamento do script `frases.js` e do DOM
+    document.addEventListener('DOMContentLoaded', function () {
+      const btn = document.getElementById('nova');
+      if (btn && typeof mostrarFraseDoDia === 'function') {
+        btn.addEventListener('click', mostrarFraseDoDia);
+      }
+      // Chama uma vez ao carregar a página
+      if (typeof mostrarFraseDoDia === 'function') mostrarFraseDoDia();
+    });
+  </script>
+</html>
+</body>
+</html>

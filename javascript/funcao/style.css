@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --cor_fundo: #43546d;
+    --cor_texto: #131325;
+}
+
+#topo {
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+
+    background-color: var(--cor_fundo);
+    text-align: center;
+}
+
+#conteudo {
+
+    width: 40%;
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo p {
+
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#botao {
+
+    width: 30%;
+    margin: 5px;
+    padding: 2px;
+}
+
+#conteudo span {
+
+    width: 150px;
+    border: 1px solid;
+}

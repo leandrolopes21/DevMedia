@@ -1,0 +1,10 @@
+.principal {
+  background-color: lightgray;
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+}

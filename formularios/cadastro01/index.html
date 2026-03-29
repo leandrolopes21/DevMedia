@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+</head>
+<body>
+
+    <header class="topo">
+        <p>Revista</p>
+    </header>
+
+    <main class="principal">
+
+        <h1>Formulário de Cadastro</h1>
+        <p>Estamos lançando uma nova revista, e enviaremos o primeiro exemplar ao endereço cadastrado.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula8/">
+
+            <fieldset class="campo">
+                <legend>Dados de Contato</legend>
+                
+                <label>Nome</label>
+                <input placeholder="Digite seu nome completo" type="text" name="nome" required>
+
+                <label>E-mail</label>
+                <input placeholder="exemplo@email.com" type="email" name="email">
+                
+                <label>Telefone</label>
+                <input placeholder="(XX) XXXXX-XXXX" type="tel" name="telefone">
+            </fieldset>
+
+            <fieldset class="campo">
+                <legend>Dados para Entrega</legend>
+
+                <label>Endereço</label>
+                <input type="text" name="endereco" required>
+
+                <label>Número</label>
+                <input type="number" name="numero">
+
+                <label>Complemento</label>
+                <input type="text" name="complemento">
+            </fieldset>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+    </main>
+
+    <footer class="rodape">
+        Leandro Lopes 2025&copy;
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.topo {
+    background-color: blueviolet;
+    color: white;
+    padding: 25px;
+}
+
+.topo p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* seção principal */
+.principal {
+    width: 425px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.conteiner-texto h1 {
+    padding: 20px 0;
+}
+
+.conteiner-texto p {
+    padding-bottom: 20px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+/* seção de formulario */
+.formulario {
+    width: 100%;
+}
+
+.titulo-categoria {
+    padding: 15px 0;
+    font-size: 23px;
+}
+
+.grupo-opcao {
+    display: flex;
+}
+
+.grupo-opcao label {
+    padding-left: 5px;
+}
+
+/* botão */
+button {
+    background-color: blueviolet;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    color: blueviolet;
+    width: 425px;
+    margin: 25px auto 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}

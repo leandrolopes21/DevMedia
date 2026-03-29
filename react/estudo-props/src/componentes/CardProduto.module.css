@@ -1,0 +1,24 @@
+.card {
+  height: auto;
+  padding: 10px;
+  border: 1px solid;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  gap: 15px;
+}
+
+.card button {
+  background-color: rgb(66, 66, 224);
+  color: white;
+  padding: 5px;
+}
+
+.img {
+  width: 250px;
+  height: auto;
+}

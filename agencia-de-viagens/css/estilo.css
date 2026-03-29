@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #80808029;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Geral */
+.secao-largura-limitada {
+    width: 100%;
+    max-width: 1024px;
+}
+
+/* Seção Topo */
+.secao-topo {
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+}
+
+.secao-conteudo-topo {
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.secao-conteudo-topo img {
+    width: 32px;
+    height: 32px;
+}
+
+.secao-conteudo-topo p {
+    font-size: 24px;
+    color: #5d15d1;
+    margin-left: 10px;
+}
+
+/* Seção Formulário */
+.secao-imagem-formulario {
+    width: 100%;
+    height: auto;
+    background-image: url(../imagens/bahia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secao-formulario {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.conteiner-logo-texto {
+    width: 100%;
+    height: 35px;
+    background-color: #5d15d1;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-logo-texto img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+.conteiner-logo-texto h2 {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* Formulário */
+.conteiner-form {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 25px 20px 25px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner-form h3 {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+label {
+    font-size: 16px;
+}
+
+.grupo-dados {
+    width: 100%;
+}
+
+.grupo-escolha {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.grupo-escolha div {
+    width: calc((100% - 20px) / 2);
+}
+
+.grupo-dados input,
+.grupo-escolha input,
+.grupo-escolha select {
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+
+    display: flex;
+}
+
+.grupo-preferencia {
+    width: 100%;
+    margin: 10px 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.grupo-preferencia div {
+    width: 120px;
+
+    display: flex;
+}
+
+.grupo-preferencia input {
+    width: 15px;
+}
+
+.grupo-preferencia label {
+    margin-left: 8px;
+}
+
+button {
+    width: 160px;
+    height: 32px;
+    margin-top: 12px;
+    background-color: #5d15d1;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Seção Ofertas */
+.secao-ofertas {
+    margin: 32px auto 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-ofertas h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.secao-ofertas h3 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.secao-ofertas span {
+    font-weight: bold;
+}
+
+.conteiner-cards {
+    width: 100%;
+    height: 375px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.secao-cards {
+    width: calc(50% - 10px);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.figuras {
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+
+.figuras img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 50%);
+    color: #fff;
+    font-size: 17px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+/* Seção Anúncio */
+.conteiner-anuncios {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+}
+
+.cards div {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.cards div p {
+    color: grey;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Seção Rodape */
+footer {
+    width: 100%;
+    background-color: #5d15d1;
+    margin-top: 32px;
+}
+
+.rodape {
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato-redes {
+    margin: 15px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-redes h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.contato-redes div {
+    margin: 15px 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.contato-redes div img {
+    width: 18px;
+}
+
+.contato-redes div span {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}

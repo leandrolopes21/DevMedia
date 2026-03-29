@@ -1,0 +1,38 @@
+.card {
+   width: 33%;
+   padding: 20px 30px;
+   display: flex;
+   flex-direction: column;
+   color: #fff;
+   background-color: #000000;
+}
+
+.card:hover {
+    border: 3px dotted #0000ff;
+    background-color: #CCCCCC;
+    color: #000000;
+    font-size: 20px;
+}
+
+table, td {   
+    border: 1px solid #000000;   
+    text-align: center;
+}
+
+thead th {
+    padding: 20px 10px;
+    background-color: #000000;
+    color: #fff;
+}
+
+tbody td {
+    padding: 20px 30px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #CCCCCC;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #474747;
+}

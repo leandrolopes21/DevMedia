@@ -1,0 +1,5 @@
+Criar projeto responsivo para tela com:
+
+	1024px;
+	768px;
+	425px.
