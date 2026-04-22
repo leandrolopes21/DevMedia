@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Potência</title>
+    <link rel="stylesheet" href="styleTabela.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="principal">
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th colspan="13">
+                        Tabela de Potência
+                        <button onclick="gerarValor()">Calcular</button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="esq">Expoente</td>
+                    <td></td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td class="esq">Base</td>
+                    <td id="numero-base">
+                        <input type="number" id="number">
+                    </td>
+                    <td class="exp-zero"></td>
+                    <td class="exp-um"></td>
+                    <td class="exp-dois"></td>
+                    <td class="exp-tres"></td>
+                    <td class="exp-quatro"></td>
+                    <td class="exp-cinco"></td>
+                    <td class="exp-seis"></td>
+                    <td class="exp-sete"></td>
+                    <td class="exp-oito"></td>
+                    <td class="exp-nove"></td>
+                    <td class="exp-dez"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script>
+
+        var num1 = document.getElementById('numero-base');
+        var resultadoZero = document.getElementsByClassName('exp-zero');
+        var apresentaResultadoZero = 0;
+        var resultadoUm = document.getElementsByClassName('exp-um');
+        var resultadoDois = document.getElementsByClassName('exp-dois');
+        var resultadoTres = document.getElementsByClassName('exp-tres');
+        var resultadoQuatro = document.getElementsByClassName('exp-quatro');
+        var resultadoCinco = document.getElementsByClassName('exp-cinco');
+        var resultadoSeis = document.getElementsByClassName('exp-seis');
+        var resultadoSete = document.getElementsByClassName('exp-sete');
+        var resultadoOito = document.getElementsByClassName('exp-oito');
+        var resultadoNove = document.getElementsByClassName('exp-nove');
+        var resultadoDez = document.getElementsByClassName('exp-dez');
+        var valor1 = 0;
+
+        function gerarValor() {
+            
+            valor1 = Number(num1.value);
+            apresentaResultadoZero = valor1 * 10;
+            resultadoZero.innerHTML = `${apresentaResultadoZero}`;
+        }
+    </script>
+</body>
+</html>

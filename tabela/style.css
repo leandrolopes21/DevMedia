@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.topo {
+    background-color: rgb(252, 164, 132);
+    text-align: center;
+    padding: 35px 0px;
+}
+
+.tabela {
+    background-color: rgb(245, 245, 245);
+    padding: 100px 0px;
+}
+
+.tabela table {
+    width: 1024px;
+    margin: 0px auto;
+    border: 2px solid;
+    box-shadow: 2px 2px 35px 3px #000;
+}
+
+.tabela table thead tr {
+    background-color: #44d1c1;
+}
+
+.tabela table thead tr th {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid;
+}
+
+.tabela table tbody tr td {
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+}

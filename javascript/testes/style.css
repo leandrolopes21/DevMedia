@@ -1,0 +1,25 @@
+.caixa {
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    background-color: lightgray;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-alternada {
+    background-color: red;
+    color: white;
+}
+
+.texto-alternado {
+    background-color: red;
+    color: red;
+}
+
+.texto {
+    font-weight: 600;
+}

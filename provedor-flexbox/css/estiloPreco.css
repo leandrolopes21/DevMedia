@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* seção topo */
+
+.conteiner-topo {
+    background-color: #2f86d6;
+    color: #fff;
+    padding: 35px 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.conteiner-logo {
+    width: 285px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteiner-logo-imagem {
+    width: 100px;
+    height: 100px;
+}
+
+.conteiner-logo-imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.conteiner-logo p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.links {
+    width: 375px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;    
+    gap: 10px
+}
+
+.links a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* seção tabela */
+
+.precos {
+    background-color: #fff;
+    width: 1024px;
+    padding: 20px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.precos table {
+    width: 960px;
+    margin: 0px auto;
+    box-shadow: 0.5px 0.5px 1px 1px #a8a4a4;
+}
+
+.precos .vazio {
+    background-color: #fff;
+}
+
+.precos table thead tr th {
+    background-color: #f1f3f7;
+    width: 80px;
+    padding: 15px 0px;
+}
+
+.precos table thead tr th h3 {
+    font-size: 10px;
+    color: #a8a4a4;
+    padding: 5px 0px 10px 0px;
+}
+
+.precos table thead tr th p {
+    font-size: 30px;
+    color: #233032;
+}
+
+.precos table tbody tr td {
+    font-size: 10px;
+    font-weight: 600;
+    color: #233032;
+    padding: 15px 5px;
+    box-shadow: 0px 0px 1px 1px #f1f3f7;
+}
+
+.precos table tbody tr td span {
+    color: #2f86d6;
+}
+
+.precos table tbody tr .cor-de-fundo {
+    background-color: #f1f3f7;
+    text-align: left;
+    box-shadow: 1px 1px 1px 1px #fff;
+}
+
+/* seção rodapé */
+
+.rodape {
+    width: 100%;
+    text-align: center;
+    background-color: #2f86d6;
+}
+
+.logo {
+    position: relative;
+    min-width: 350px;
+    max-width: 400px;
+    height: 100px;
+    top: 10px;
+    margin: 0px auto 30px;
+}
+
+.logo img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    left: 0px;
+}
+
+.logo h1 {
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    font-size: 32px;
+    color: #000000;
+}
+
+.logo p {
+    position: absolute;
+    bottom: 15px;
+    left: 110px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.secao-contatos {
+    color: #fff;
+    width: 1024px;
+    margin: 0px auto;
+    font-size: 16px;
+}
+
+.secao-contatos p {
+    padding: 10px 0px;
+}
+
+.rodape .dev {
+    background-color: #f1f3f7;
+    padding: 10px 0px;
+}
+
+.rodape .dev span {
+    font-style: italic;
+    color: #2f86d6;
+}

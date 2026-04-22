@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.principal {
+    width: 768px;
+}
+
+.tabela {
+    width: 100%;
+}
+
+.tabela th {
+    background-color: #0000052c;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.tabela th, td {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.tabela td {
+    padding: 5px;
+}
+
+.esq {
+    text-align: left;
+}
+
+#numero-base {
+    padding: 0;
+}
+
+input[type=number] {
+    width: 40px;
+    text-align: center;
+}

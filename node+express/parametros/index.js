@@ -19,8 +19,9 @@ app.get('/', (req, res) => {
 
     let imc = calculadoraIMC.calculaIMC(peso, altura);
     let formataResultado = imc.toFixed(2);
+    let status = calculadoraIMC.retornaStatusIMC(imc);
 
-    res.json({imc: formataResultado});
+    res.json({imc: formataResultado, status: status});
 });
 
 // Aqui o método listen, responsável por escutar todas as requisições HTTP feitas a API
