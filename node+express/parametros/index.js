@@ -17,11 +17,17 @@ app.get('/', (req, res) => {
     let peso = req.query.peso;
     let altura = req.query.altura;
 
-    let imc = calculadoraIMC.calculaIMC(peso, altura);
-    let formataResultado = imc.toFixed(2);
-    let status = calculadoraIMC.retornaStatusIMC(imc);
+    if (calculadoraIMC.validaParametro(req.query.peso) && calculadoraIMC.validaParametro(req.query.altura)) {
 
-    res.json({imc: formataResultado, status: status});
+        let imc = calculadoraIMC.calculaIMC(peso, altura);
+        let formataResultado = imc.toFixed(2);
+        let status = calculadoraIMC.statusIMC(imc);
+
+        res.json({imc: formataResultado, status: status});
+    } else {
+        
+        res.status(400).json({'Erro': 'Parâmetros inválidos!'});
+    }
 });
 
 // Aqui o método listen, responsável por escutar todas as requisições HTTP feitas a API
