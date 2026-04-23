@@ -6,9 +6,16 @@ const servico = require('./servico');
 app.get('/', (req, res) => {
 
     let ano = req.query.ano;
-    let informaFato = servico.retornaMensagemAno(ano);
 
-    res.json({'ano': ano, 'fato': informaFato});
+    if (servico.validaParametro(req.query.ano)) {
+
+        let informaFato = servico.retornaMensagemAno(ano);
+
+        res.json({'ano': ano, 'fato': informaFato});
+    } else {
+
+        res.status(400).json({'Erro': 'Parâmetro inválido!'});
+    }
 });
 
 app.listen(8080, () => {
