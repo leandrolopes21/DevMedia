@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  turbopack: {
+    // Define a raiz do projeto para o Turbopack
+    root: '.',
+  },
 };
 
 export default nextConfig;
