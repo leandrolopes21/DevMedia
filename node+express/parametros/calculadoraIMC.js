@@ -14,18 +14,16 @@ function statusIMC(imc) {
 
      if (imc < 18.5) {
         status = 'Abaixo do peso';
-     } else if (imc >= 18.5 && imc < 24.9) {
+     } else if (imc < 24.9) {
         status = 'Peso normal';
-     } else if (imc >= 24.9 && imc < 29.9) {
+     } else if (imc < 29.9) {
         status = 'Sobrepeso';
-     } else if (imc >= 29.9 && imc < 34.9) {
+     } else if (imc < 34.9) {
         status = 'Obesidade grau I';
-     } else if (imc >= 34.9 && imc < 39.9) {
+     } else if (imc < 39.9) {
         status = 'Obesidade grau II';
-     } else if (imc >= 39.9) {
-        status = 'Obesidade grau III (mórbida)';
      } else {
-        status = 'Sem dados!';
+        status = 'Obesidade grau III (mórbida)';
      }
 
      return status;
@@ -34,12 +32,7 @@ function statusIMC(imc) {
 // A função validaParametro, verifica se os valores de peso e altura fornecidos, são ou não numéricos
 
 function validaParametro(parametro) {
-
-    if (isNaN(parametro)) {
-        return false;
-    } else {
-        return true;
-    }
+    return !isNaN(parametro) && parametro !== null && parametro !== "";
 }
 
 // Exportando a função
