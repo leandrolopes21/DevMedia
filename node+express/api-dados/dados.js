@@ -1,4 +1,7 @@
+// Este arquivo contém os dados estáticos da aplicação.
+// É uma fonte de dados para fatos históricos.
 const fatosHistoricos = [
+    // Cada objeto no array representa um fato histórico, com 'ano' e 'fato'.
     { ano: "1920", fato: "As mulheres ganham o direito ao voto nos EUA" },
     { ano: "1921", fato: "O partido comunista chinês é fundado" },
     { ano: "1922", fato: "O império britânico diminui" },
@@ -102,4 +105,5 @@ const fatosHistoricos = [
     { ano: "2020", fato: "Tem início a pandemia de COVID-19" }
 ];
 
+// Exporta o array fatosHistoricos para que possa ser utilizado por outros módulos.
 exports.fatosHistoricos = fatosHistoricos;
