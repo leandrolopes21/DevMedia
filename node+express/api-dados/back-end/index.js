@@ -1,7 +1,11 @@
 // Importa o módulo Express, que é um framework web para Node.js.
 const express = require('express');
+// Importa o módulo CORS para permitir requisições de outras origens.
+const cors = require('cors');
 // Cria uma instância da aplicação Express.
 const app = express();
+
+app.use(cors());
 
 // Importa o módulo de serviço que contém a lógica de negócios.
 const servico = require('./servico');
