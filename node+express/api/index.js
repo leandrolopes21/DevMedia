@@ -11,5 +11,5 @@ app.get('/', (req, res) => {
 // 3ª seção - utilizando a função listen do express, através da variável app
 app.listen(8080, () => {
     let data = new Date();
-    console.log('Servidor node iniciado em : ' + data.toLocaleDateString() + ' ' + data.toLocaleTimeString())
+    console.log('Servidor node iniciado em : ' + data.toLocaleDateString() + ' ' + data.toLocaleTimeString());
 });
