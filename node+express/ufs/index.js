@@ -17,11 +17,33 @@ app.get('/ufs/:iduf', (req, res) => {
 
     // Esta constante idUF irá receber o valor 21
     const idUF = parseInt(req.params.iduf);
+    
+    // Em teste
+    const nomeUF = req.query.nome;
+    
     // Esta constante uf irá buscar o valor recebido em idUF
     const uf = colecaoUfs.find(u => u.id === idUF);
+    
+    // Em teste
+    const busca = colecaoUfs.filter(u => u.nome === nomeUF);
 
-    // Será apresentado para o cliente, em json, o valor recebido e encontrado na coleção (21)
-    res.json(uf);
+    if (isNaN(idUF)) {
+        
+        res.status(400).send({"Erro": "Requisição inválida!"});
+
+    } else if (idUF > 27) {
+
+        res.status(404).send({"Mensagem": "Unidade Federal não encontrada."});
+
+    } else {
+
+        // Será apresentado para o cliente, em json, o valor recebido e encontrado na coleção (21)
+        res.json(uf);
+    }
+
+    // Em teste
+    res.json(busca);
+    
 });
 
 app.listen(8080, () => {

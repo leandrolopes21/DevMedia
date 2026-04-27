@@ -29,3 +29,6 @@ export const colecaoUfs = [
     { id: 26, sigla: "SE", nome: "Sergipe" },
     { id: 27, sigla: "TO", nome: "Tocantins" },
 ];
+
+//const busca = colecaoUfs.filter(item => item.nome === "Sergipe");
+//console.log(busca);
