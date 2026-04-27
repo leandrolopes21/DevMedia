@@ -5,10 +5,21 @@ import { colecaoUfs } from './dados/dados.js';
 
 const app = express();
 
+const buscarUfPorNome = (nomeUf) => {
+    return colecaoUfs.filter(uf => uf.nome.toLowerCase().includes(nomeUf.toLowerCase()));
+};
+
 // Rota para obter todos os itens da coleção
 app.get('/ufs', (req, res) => {
 
-    res.json(colecaoUfs);
+    const nomeUf = req.query.busca;
+    const resultado = nomeUf ? buscarUfPorNome(nomeUf) : colecaoUfs;
+
+    if (resultado.length > 0) {
+        res.json(resultado);
+    } else {
+        res.status(404).send({"erro": "Nenhuma UF encontrada!"});
+    }
 });
 
 // Rota para obter um item individual
@@ -18,14 +29,8 @@ app.get('/ufs/:iduf', (req, res) => {
     // Esta constante idUF irá receber o valor 21
     const idUF = parseInt(req.params.iduf);
     
-    // Em teste
-    const nomeUF = req.query.nome;
-    
     // Esta constante uf irá buscar o valor recebido em idUF
     const uf = colecaoUfs.find(u => u.id === idUF);
-    
-    // Em teste
-    const busca = colecaoUfs.filter(u => u.nome === nomeUF);
 
     if (isNaN(idUF)) {
         
@@ -39,11 +44,7 @@ app.get('/ufs/:iduf', (req, res) => {
 
         // Será apresentado para o cliente, em json, o valor recebido e encontrado na coleção (21)
         res.json(uf);
-    }
-
-    // Em teste
-    res.json(busca);
-    
+    }    
 });
 
 app.listen(8080, () => {
