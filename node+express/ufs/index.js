@@ -47,19 +47,21 @@ app.get('/ufs', (req, res) => {
  * Descrição: Retorna um objeto único representando uma UF específica.
  * Exemplo: http://localhost:8080/ufs/21
  */
+     
 app.get('/ufs/:iduf', (req, res) => {
-    // Chama o serviço passando o parâmetro dinâmico da URL (:iduf).
-    const uf = buscarUfPorId(req.params.iduf);
+    const idParam = req.params.iduf;
 
-    // Estrutura de decisão para validação da resposta:
-    if (uf) {
-        res.json(uf); // Sucesso: Retorna o objeto da UF encontrada.
-    } else if (isNaN(parseInt(req.params.iduf))) {
-        // Validação de entrada: Se o ID não for um número, retorna erro 400 (Bad Request).
-        res.status(400).send({"erro": "Requisição inválido!"});
+    // Validação de entrada: Se o ID não for um número, retorna erro 400 (Bad Request).
+    if (isNaN(parseInt(idParam))) {
+        res.status(400).send({"erro": "Requisição inválida!"});
     } else {
-        // Caso o ID seja numérico, mas não exista no banco de dados, retorna 404.
-        res.status(404).send({"erro": "UF não encontrada!"});
+        const uf = buscarUfPorId(idParam);
+
+        if (uf) {
+            res.json(uf);
+        } else {
+            res.status(404).send({"erro": "UF não encontrada!"});
+        }
     }
 });
 
