@@ -43,3 +43,5 @@ function jogoPedraPapelTesoura(jogador) {
     return 'Opção inválida. Escolha entre pedra, papel ou tesoura.';
   }
 }
+
+console.log(jogoPedraPapelTesoura('pedra'));
