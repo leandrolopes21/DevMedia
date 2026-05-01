@@ -29,7 +29,7 @@ function jogoPedraPapelTesoura(jogador) {
 
   if (jogador === 'pedra' || jogador === 'papel' || jogador === 'tesoura') {
     if (jogador === computador) {
-      return `Empate! Ambos escolheram $.`;
+      return `Empate! Ambos escolheram pedra.`;
     } else if (
       (jogador === 'pedra' && computador === 'tesoura') ||
       (jogador === 'papel' && computador === 'pedra') ||
