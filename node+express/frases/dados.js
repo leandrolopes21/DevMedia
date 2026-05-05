@@ -1,4 +1,4 @@
-frases = [
+const frases = [
     'A persistência é o caminho do êxito.',
     'A maior de todas as torres começa no solo.',
     'Siga os bons e aprenda com eles.',
