@@ -14,12 +14,23 @@ export const exibeDadosIpcaPorAno = (ano) => {
     return historicoInflacao.filter(dado => dado.ano === dadosAno);
 };
 
-/*
-export const buscarProdutoPorNome = (nomeProduto) => {
-    return produtos.filter(produto => produto.nome.toLowerCase().includes(nomeProduto.toLowerCase()));
-};
+export const calculaReajustePeriodo = (valor, mesInicial, anoInicial, mesFinal, anoFinal) => {
+    const historicoFiltrado = historicoInflacao.filter(dado => {
+        if (anoInicial === anoFinal) {
+            return dado.ano === anoInicial && dado.mes >= mesInicial && dado.mes <= mesFinal;
+        } else {
+            return (
+                (dado.ano === anoInicial && dado.mes >= mesInicial) ||
+                (dado.ano > anoInicial && dado.ano < anoFinal) ||
+                (dado.ano === anoFinal && dado.mes <= mesFinal)
+            );
+        }
+    });
 
-export const buscarProdutoCategoria = (nomeCategoria) => {
-    return produtos.filter(produto => produto.categoria.toLowerCase().includes(nomeCategoria.toLowerCase()));
+    let resultado = valor;
+    for (const elemento of historicoFiltrado) {
+        resultado *= (1 + (elemento.ipca / 100));
+    }
+
+    return resultado.toFixed(2);
 };
-*/

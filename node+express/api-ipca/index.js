@@ -1,4 +1,4 @@
-import { exibeDadosIpca, exibeDadosIpcaPorAno, exibeDadosPorID } from './servico.js';
+import { calculaReajustePeriodo, exibeDadosIpca, exibeDadosIpcaPorAno, exibeDadosPorID } from './servico.js';
 import express from 'express';
 const app = express();
 
@@ -27,7 +27,26 @@ app.get('/historicoIPCA', (req, res) => {
     }
 });
 
-// 3ª Rota, busca os dados através do seu id
+// 3ª Rota, calcular valores da coleção de dados ipca
+app.get('/historicoIPCA/calculo', (req, res) => {
+    const valor = parseFloat(req.query.valor);
+    const mesInicial = parseInt(req.query.mesInicial);
+    const anoInicial = parseInt(req.query.anoInicial);
+    const mesFinal = parseInt(req.query.mesFinal);
+    const anoFinal = parseInt(req.query.anoFinal);
+
+    if (isNaN(valor) || isNaN(mesInicial) || isNaN(anoInicial) || isNaN(mesFinal) || isNaN(anoFinal) ||
+        mesInicial < 1 || mesInicial > 12 || mesFinal < 1 || mesFinal > 12 ||
+        anoInicial < 2015 || anoFinal > 2023 || (anoInicial > anoFinal) ||
+        (anoInicial === anoFinal && mesInicial > mesFinal)) {
+        res.status(400).send({"erro": "Parâmetros inválidos ou fora do intervalo (2015-2023"});
+    } else {
+        const resultado = calculaReajustePeriodo(valor, mesInicial, anoInicial, mesFinal, anoFinal);
+        res.json({"resultado": resultado});
+    }
+});
+
+// 4ª Rota, busca os dados através do seu id
 app.get('/historicoIPCA/:id', (req, res) => {
     const dadosIpcaID = req.params.id;
 
