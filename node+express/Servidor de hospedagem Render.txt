@@ -1,0 +1,9 @@
+Servidor de hospedagem Render
+
+render.com
+
+conectar com a conta GitHub
+
+criar novo web-services - plano free
+
+fazer deploy da API, que já deve estar no github
