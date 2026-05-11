@@ -12,15 +12,16 @@ function transformaFrase(frase) {
         }
 
         // Pega a primeira letra da palavra ([0]), coloca em maiúsculo
-        // e concatena com o restante da palavra a partir do segundo caractere (substring(1))
-        novaFrase += palavra[0].toUpperCase() + palavra.substring(1);
+        // e concatena com o restante da palavra a partir do segundo caractere.
+        // Nota: slice(1) e substring(1) são intercambiáveis aqui, pois o índice é positivo.
+        novaFrase += palavra[0].toUpperCase() + palavra.slice(1);
     }
 
     // Retorna a frase completa com as iniciais em maiúsculo
     return novaFrase;
 }
 
-console.log(transformaFrase('Eu gosto de estudar programação com javascript'));
+console.log(transformaFrase('o rato roeu a roupa do rei de roma'));
 
 /*
 // Versão moderna e concisa utilizando métodos funcionais:
