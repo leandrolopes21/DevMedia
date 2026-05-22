@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS funcionarios (
 	id_funcionario INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(150) NOT NULL,
     cpf CHAR(11) NOT NULL UNIQUE,
-    data_admissão DATE NOT NULL,
+    data_admissao DATE NOT NULL,
     id_departamento INT,
     id_cargo INT,
     
