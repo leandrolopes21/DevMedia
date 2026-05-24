@@ -1,2 +1,0 @@
--- Alterar nome de coluna na tabela
--- ALTER TABLE nome_tabela RENAME COLUMN nome_coluna_incorreto TO nome_coluna_correto;
