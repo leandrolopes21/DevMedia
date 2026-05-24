@@ -11,9 +11,7 @@ INSERT INTO departamentos (nome_departamento, sigla) VALUES
 INSERT INTO cargos (titulo_cargo, salario_base) VALUES
 ('Desenvolvedor Full Stack', 6500.00),
 ('Analista de DP', 4200.00),
-('Gerente de Projetos', 9500.00),
-('Desenvolvedor Front-end', 3000.00),
-('Desenvolvedor Back-end', 3500.00);
+('Gerente de Projetos', 9500.00);
 */
 
 -- Inserindo registros da tabela de Funcionarios vinculando as Chaves Estrangeiras

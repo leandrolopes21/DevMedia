@@ -38,9 +38,3 @@ CREATE TABLE IF NOT EXISTS funcionarios (
         REFERENCES cargos (id_cargo)
         ON DELETE RESTRICT
 );
-
--- 5. Criação da Tabela de Clientes
-CREATE TABLE IF NOT EXISTS clientes (
-    id_cliente INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-)
