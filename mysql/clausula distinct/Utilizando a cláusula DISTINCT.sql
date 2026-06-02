@@ -11,5 +11,6 @@
 
 -- Selecionando mais de uma coluna
 
-SELECT DISTINCT email, ddd_telefone
-FROM clientes
+SELECT
+    DISTINCT email
+    FROM clientes
