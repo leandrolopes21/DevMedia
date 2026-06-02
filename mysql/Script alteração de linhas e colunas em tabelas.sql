@@ -1,9 +1,15 @@
 -- Criei a tabela clientes, inicialmente apenas com id_cliente e nome
 
 /*
-CREATE TABLE clientes
+CREATE TABLE clientes (
     id_cliente INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL;
+    nome VARCHAR(100) NOT NULL,
+    cnpj VARCHAR(18) UNIQUE,
+    email VARCHAR(100),
+    telefone VARCHAR(20),
+    data_cadastro DATE,
+    ativo BOOLEAN DEFAULT TRUE
+);
 */
 
 -- Abaixo o código de alteração, para incluir novas colunas
