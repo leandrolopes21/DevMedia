@@ -1,0 +1,24 @@
+-- CREATE TABLE IF NOT EXISTS times (
+--     id_time INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+--     nome_time VARCHAR(30) NOT NULL
+-- );
+
+-- INSERT INTO times (
+--     nome_time
+-- ) VALUES
+--     ('Boca Juniors'),
+--     ('Olimpia'),
+--     ('Once Caldas'),
+--     ('São Paulo'),
+--     ('Internacional'),
+--     ('Liga de Quito'),
+--     ('Estudiantes'),
+--     ('Santos'),
+--     ('Corinthians'),
+--     ('Atletico Mineiro'),
+--     ('San Lorenzo'),
+--     ('River Plate'),
+--     ('Atletico Nacional'),
+--     ('Grêmio'),
+--     ('Flamengo'),
+--     ('Palmeiras');
