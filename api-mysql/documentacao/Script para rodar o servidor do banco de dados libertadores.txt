@@ -1,0 +1,3 @@
+Script para rodar o servidor do banco de dados libertadores
+
+C:\Users\Administrator\Documents\ESTUDOS\DevMedia\api-mysql>node index.js

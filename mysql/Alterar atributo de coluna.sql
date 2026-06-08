@@ -1,4 +1,4 @@
 -- Alterar atributo de coluna
 
-ALTER TABLE empresa.produtos
-MODIFY COLUMN preco DECIMAL(10, 2) NOT NULL;
+ALTER TABLE campeonatos
+MODIFY COLUMN vice VARCHAR(35) NOT NULL;

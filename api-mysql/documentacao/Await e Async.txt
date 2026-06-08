@@ -1,0 +1,13 @@
+Await e Async
+
+getConnection() é uma função assíncrona no JavaScript.
+Função assíncronas tem duas características principais
+
+** Seu tempo de resposta é desconhecido;
+** Ela executa paralelamente a outras operações
+
+* Operações assíncronas não impedem a execução de outra parte do código *
+
+O uso do await pausa a execução do código, até que a operação assíncrona seja concluída.
+
+Quando o await está inserido em uma função, precisa indicar na função o uso do async, indicando que esta é uma função assíncrona.

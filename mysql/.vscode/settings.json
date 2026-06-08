@@ -10,9 +10,23 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "Local instance MySQL80",
-            "username": "root",
-            "database": "curitibaflor"
+            "name": "Conexao_empresa",
+            "database": "empresa",
+            "username": "le21brad"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Conexao_libertadores",
+            "database": "libertadores",
+            "username": "liberta"
         }
     ]
 }
