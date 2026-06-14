@@ -1,0 +1,203 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Layout principal */
+.container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* Seção hero */
+.hero {
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  color: white;
+  padding: 80px 16px;
+}
+
+.conteudo-hero {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-hero {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.subtitulo-hero {
+  font-size: 20px;
+  color: #bfdbfe;
+  max-width: 672px;
+  margin: 0 auto;
+}
+
+/* Informações rápidas */
+.info-rapida {
+  display: flex;
+  flex-direction: column;
+  padding-top: 48px;
+}
+
+@media (min-width: 640px) {
+  .info-rapida {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.cartao-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  padding: 16px 0px;
+  flex: 1 1 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.cartao-info .material-symbols-outlined {
+  font-size: 24px;
+}
+
+/* Conteúdo principal */
+.principal {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 16px;
+}
+
+.titulo-principal {
+  font-size: 30px;
+  font-weight: bold;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.container-medicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cartao-medico {
+  flex: 1 1 auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  width: 300px;
+  margin: 16px;
+}
+
+.cartao-medico:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-medico {
+  padding: 32px;
+}
+
+.container-avatar {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 24px;
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-avatar .material-symbols-outlined {
+  font-size: 48px;
+  color: white;
+}
+
+.nome-medico {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.descricao-medico {
+  color: #4b5563;
+  text-align: center;
+  margin-bottom: 24px;
+  min-height: 60px;
+}
+
+.info-contato {
+  border-top: 1px solid #f3f4f6;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-contato {
+  display: flex;
+  align-items: center;
+  color: #4b5563;
+}
+
+.item-contato .material-symbols-outlined {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #3b82f6;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #111827;
+  color: white;
+  padding: 48px 16px;
+}
+
+.conteudo-rodape {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-rodape {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.subtitulo-rodape {
+  color: #9ca3af;
+}
+
+.links-sociais {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.link-social {
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
+
+.link-social:hover {
+  color: white;
+}
+
+.link-social .material-symbols-outlined {
+  font-size: 24px;
+}
