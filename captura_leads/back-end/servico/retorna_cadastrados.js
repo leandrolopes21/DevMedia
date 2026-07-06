@@ -1,3 +1,5 @@
+// ********* ESTE ARQUIVO ESTÁ SEM USO NO MOMENTO *********
+
 // Importação do pool de conexão com o banco de dados
 import pool from './conexao.js';
 
