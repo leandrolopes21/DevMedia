@@ -1,0 +1,10 @@
+-- Script para criar um novo usário
+-- CREATE USER novousuario IDENTIFIED BY 'novasenha'
+
+-- CREATE USER barbeiro IDENTIFIED BY '*barbeiro';
+
+-- Configurar permissão para o novo usuário acessar o banco de dados
+-- Neste caso o usuário ganha permissão para acessar o banco de dados
+-- GRANT ALL PRIVILEGES ON nomebancodedados TO 'novousuario';
+
+-- GRANT ALL PRIVILEGES ON db_barbearia TO 'barbeiro';

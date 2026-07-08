@@ -1,3 +1,4 @@
+// Validacao para nome e email informados no cadastro
 function validaNome(nome) {
     const regexNome = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/;
 
@@ -12,15 +13,23 @@ function validaEmail(email) {
     return isValid;
 }
 
-export function validaUsuario(nome, email) {
+function validaTelefone(telefone) {
+    const regexTelefoneBR = /^\(?\d{2}\)?[\s-]?(9\d{4})[\s-]?(\d{4})$/;
+
+    const isValid = regexTelefoneBR.test(telefone);
+    return isValid;
+}
+
+export function validaUsuario(nome, email, telefone) {
     const nomeValido = validaNome(nome);
     const emailValido = validaEmail(email);
+    const telefoneValido = validaTelefone(telefone);
 
-    const usuarioValido = nomeValido && emailValido;
+    const usuarioValido = nomeValido && emailValido && telefoneValido;
 
     if (usuarioValido) {
         return {status: true, mensagem: ''};
     } else {
-        return {status: false, mensagem: 'Nome ou email invalidos!'};
+        return {status: false, mensagem: 'Nome, email ou telefone invalidos!'};
     }
 }
