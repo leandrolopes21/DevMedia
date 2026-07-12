@@ -1,0 +1,4 @@
+id;id_cliente;id_atendente;status_agendamento;data_agendamento
+;2;1;agendado;11/07/2026
+;3;3;agendado;11/07/2026
+;1;2;agendado;14/07/2026
