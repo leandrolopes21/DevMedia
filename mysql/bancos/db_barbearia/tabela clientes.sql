@@ -29,4 +29,5 @@ VALUES
   ('Renata Braga', 'renata.braga@gmail.com', '(41) 98444-7766', 'ativo'),
   ('Thiago Martins', 'thiago.martins@gmail.com', '(41) 98333-8877', 'ativo'),
   ('Larissa Pires', 'larissa.pires@outlook.com', '(41) 98222-9988', 'ativo'),
-  ('Bruno Carvalho', 'bruno.carvalho@gmail.com', '(41) 98111-0099', 'ativo');
+  ('Bruno Carvalho', 'bruno.carvalho@gmail.com', '(41) 98111-0099', 'ativo'),
+  ('Albuquerque Guerra', 'albuguer@email.com', '(11) 98210-7841', 'inativo');
