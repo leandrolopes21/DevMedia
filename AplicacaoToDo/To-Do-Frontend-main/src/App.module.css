@@ -1,0 +1,122 @@
+.todos {
+    margin: 1rem;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    border-radius: 12px;
+}
+
+.todos section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.todos div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 10px;
+    margin: 6px 0;
+    background: #14c3ac;
+    border-radius: 6px;
+}
+
+.todos div > label {
+    color: white;
+    font-family: 'arial', sans-serif;
+}
+
+.todos div > span {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.todos div > span > input {
+    width: 24px;
+    height: 24px;
+    background: #ffffff;
+    appearance: none;
+    border-radius: 5px;
+}
+
+.todos div > span > input:hover {
+    background: #dfdfdf;
+}
+
+.todos div > span > input:checked {
+    background: #2fe33e;
+    border: 1px solid #000000;
+}
+
+.todos div > span > input:checked:hover {
+    background: #c9f9b3;
+}
+
+.todos div > span > input:checked:after {
+    content: '✓';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.todos div > span > button {
+    height: 24px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.InputTodo {
+    display: flex !important;
+    width: calc(100% - 30px);
+    justify-content: space-between;
+    padding: 16px 10px;
+    margin: 6px 5px;
+}
+
+.InputTodo input {
+    flex: 1 1 auto;
+    padding: 16px;
+    border: 1px solid #9c9c9c;
+    color: #333333;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+}
+
+.InputTodo button {
+    flex: 0 0 auto;
+    padding: 16px;
+    background: #5cc0ad;
+    border: 1px solid #9c9c9c;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    color: white;
+}
+
+.EditTodo {
+    display: none;
+}
+
+.Edit {
+    background: #5d9df5;
+    color: white;
+}
+
+.Edit:hover {
+    background: #3763af;
+}
+
+.Delete {
+    background: #df4654;
+    color: white;
+}
+
+.Delete:hover {
+    background: #9b2526;
+}
