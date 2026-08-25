@@ -1,0 +1,1 @@
+CREATE INDEX idx_agendamentos_data_agendamento ON agendamentos(data_agendamento);

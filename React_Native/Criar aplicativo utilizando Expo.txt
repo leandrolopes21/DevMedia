@@ -1,0 +1,8 @@
+Criar aplicativo utilizando Expo - linha de comando VSCode ou CMD
+
+npx create-expo-app MeuApp --template expo-template-blank@sdk-54 (versão do app celular 54)
+
+Comandos para garantir compatibilidade
+
+npm install expo@latest
+npx expo install --fix

@@ -34,6 +34,23 @@
  MODIFY COLUMN email VARCHAR(100) NOT NULL;
  */
 /*
+ START TRANSACTION;
+ 
+ -- 1) Adiciona a nova coluna para armazenar apenas horário
+ ALTER TABLE agendamentos
+ ADD COLUMN hora_agendamento TIME;
+ 
+ -- 2) Preenche a nova coluna usando a parte de horário do timestamp existente
+ UPDATE agendamentos
+ SET hora_agendamento = TIME(data_agendamento);
+ 
+ -- 3) Converte data_agendamento para armazenar apenas a data
+ ALTER TABLE agendamentos
+ MODIFY COLUMN data_agendamento DATE;
+ 
+ COMMIT;
+ */
+/*
  ALTER TABLE atendentes
  MODIFY COLUMN telefone VARCHAR(20),
  MODIFY COLUMN data_inicio DATE,
