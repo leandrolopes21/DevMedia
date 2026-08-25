@@ -1,0 +1,51 @@
+SQL Banco de dados db_barbearia - Supabase
+
+-- WARNING: This schema is for context only and is not meant to be run.
+-- Table order and constraints may not be valid for execution.
+
+CREATE TABLE public.servicos (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  nome text,
+  preco numeric,
+  duracao_servico_minutos bigint,
+  created_at timestamp with time zone DEFAULT now(),
+  CONSTRAINT servicos_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.atendentes (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  nome character varying NOT NULL,
+  telefone character varying,
+  data_inicio date,
+  status_atendente character varying NOT NULL,
+  created_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT atendentes_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.clientes (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  nome character varying NOT NULL,
+  email character varying NOT NULL,
+  telefone character varying,
+  status character varying NOT NULL,
+  created_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT clientes_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.agendamentos (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  id_cliente bigint,
+  id_atendente bigint,
+  status_agendamento character varying NOT NULL,
+  data_agendamento date NOT NULL,
+  created_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT agendamentos_pkey PRIMARY KEY (id),
+  CONSTRAINT fk_cliente FOREIGN KEY (id_cliente) REFERENCES public.clientes(id),
+  CONSTRAINT fk_atendente FOREIGN KEY (id_atendente) REFERENCES public.atendentes(id)
+);
+CREATE TABLE public.agendamento_servicos (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  id_agendamento bigint,
+  id_servico bigint,
+  created_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT agendamento_servicos_pkey PRIMARY KEY (id),
+  CONSTRAINT fk_agendamento FOREIGN KEY (id_agendamento) REFERENCES public.agendamentos(id),
+  CONSTRAINT fk_servico FOREIGN KEY (id_servico) REFERENCES public.servicos(id)
+);
